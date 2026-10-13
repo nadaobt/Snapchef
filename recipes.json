@@ -1,0 +1,418 @@
+[
+{
+"id": "oppskrift_001",
+"tittel": "Klassiske Pannekaker",
+"kategori": "Frokost / Kveldsmat",
+"porsjoner": 4,
+"tilberedningstid_min": 25,
+"ingredienser": ["hvetemel", "melk", "egg", "smør", "salt"],
+"ingredienser_med_mengde": [
+{"ingrediens": "hvetemel", "mengde": "3 dl"},
+{"ingrediens": "melk", "mengde": "6 dl"},
+{"ingrediens": "egg", "mengde": "3 stk"},
+{"ingrediens": "smør", "mengde": "2 ss (smeltet)"},
+{"ingrediens": "salt", "mengde": "0.5 ts"}
+],
+"instruksjoner": [
+"Visp sammen hvetemel og litt av melken til en klumpfri røre.",
+"Tilsett resten av melken og visp inn egget.",
+"Rør inn smeltet smør og salt.",
+"La røren svelle i ca. 15-20 minutter.",
+"Stek tynne pannekaker i en varm panne med litt smør."
+],
+"bilde_url": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445"
+},
+{
+"id": "oppskrift_002",
+"tittel": "Omelett med Ost og Skinke",
+"kategori": "Frokost / Lunsj",
+"porsjoner": 2,
+"tilberedningstid_min": 10,
+"ingredienser": ["egg", "melk", "hvitost", "skinke", "smør", "salt", "pepper"],
+"ingredienser_med_mengde": [
+{"ingrediens": "egg", "mengde": "4 stk"},
+{"ingrediens": "melk", "mengde": "4 ss"},
+{"ingrediens": "hvitost", "mengde": "50 g (revet)"},
+{"ingrediens": "skinke", "mengde": "50 g (i terninger)"},
+{"ingrediens": "smør", "mengde": "1 ss"},
+{"ingrediens": "salt", "mengde": "1 klype"},
+{"ingrediens": "pepper", "mengde": "1 klype"}
+],
+"instruksjoner": [
+"Visp sammen egg, melk, salt og pepper i en bolle.",
+"Smelt smør i en stekepanne på middels varme.",
+"Hell i eggeblandingen og skyv den forsiktig inn mot midten etter hvert som den stivner.",
+"Legg ost og skinke på den ene halvdelen.",
+"Brett omeletten i to og server når osten har smeltet."
+],
+"bilde_url": "https://images.unsplash.com/photo-1510693206972-df098062cb71"
+},
+{
+"id": "oppskrift_003",
+"tittel": "Kremet Tomatsuppe",
+"kategori": "Middag / Lunsj",
+"porsjoner": 4,
+"tilberedningstid_min": 20,
+"ingredienser": ["hermetiske tomater", "gulrot", "løk", "hvitløk", "grønnsaksbuljong", "kremfløte", "olivenolje", "salt", "pepper"],
+"ingredienser_med_mengde": [
+{"ingrediens": "hermetiske tomater", "mengde": "2 bokser (800 g)"},
+{"ingrediens": "gulrot", "mengde": "1 stk"},
+{"ingrediens": "løk", "mengde": "1 stk"},
+{"ingrediens": "hvitløk", "mengde": "2 fedd"},
+{"ingrediens": "grønnsaksbuljong", "mengde": "5 dl"},
+{"ingrediens": "kremfløte", "mengde": "1 dl"},
+{"ingrediens": "olivenolje", "mengde": "2 ss"},
+{"ingrediens": "salt", "mengde": "1 ts"},
+{"ingrediens": "pepper", "mengde": "0.5 ts"}
+],
+"instruksjoner": [
+"Finhakk løk, hvitløk og rasp gulroten.",
+"Fres løk, hvitløk og gulrot i olivenolje i en kjele til løken er blank.",
+"Tilsatt hermetiske tomater og grønnsaksbuljong. La småkoke i 15 minutter.",
+"Kjør suppen jevn med en stavmikser.",
+"Rør inn kremfløte, og smak til med salt og pepper."
+],
+"bilde_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
+},
+{
+"id": "oppskrift_004",
+"tittel": "Spaghetti Bolognese",
+"kategori": "Middag",
+"porsjoner": 4,
+"tilberedningstid_min": 30,
+"ingredienser": ["kjøttdeig", "spaghetti", "hermetiske tomater", "tomatpuré", "løk", "hvitløk", "gulrot", "olivenolje", "oregano", "salt", "pepper"],
+"ingredienser_med_mengde": [
+{"ingrediens": "kjøttdeig", "mengde": "400 g"},
+{"ingrediens": "spaghetti", "mengde": "350 g"},
+{"ingrediens": "hermetiske tomater", "mengde": "1 boks (400 g)"},
+{"ingrediens": "tomatpuré", "mengde": "2 ss"},
+{"ingrediens": "løk", "mengde": "1 stk"},
+{"ingrediens": "hvitløk", "mengde": "2 fedd"},
+{"ingrediens": "gulrot", "mengde": "1 stk (finrevet)"},
+{"ingrediens": "olivenolje", "mengde": "1 ss"},
+{"ingrediens": "oregano", "mengde": "1 ts"},
+{"ingrediens": "salt", "mengde": "1 ts"},
+{"ingrediens": "pepper", "mengde": "0.5 ts"}
+],
+"instruksjoner": [
+"Brun kjøttdeigen i en varm panne med olje.",
+"Tilsett hakket løk, hvitløk og finrevet gulrot, og la det frese et par minutter.",
+"Rør inn tomatpuré, hermetiske tomater og oregano.",
+"La sausen småkoke i ca. 15–20 minutter. Smak til med salt og pepper.",
+"Kok spaghetti i rikelig med lettsaltet vann etter anvisningen på pakken.",
+"Server spaghettien med kjøttsaus på toppen."
+],
+"bilde_url": "https://images.unsplash.com/photo-1621996346565-e3def6164bc3"
+},
+{
+"id": "oppskrift_005",
+"tittel": "Kylling Wok med Grønnsaker",
+"kategori": "Middag",
+"porsjoner": 3,
+"tilberedningstid_min": 20,
+"ingredienser": ["kyllingfilét", "paprika", "brokkoli", "gulrot", "soyasaus", "hvitløk", "ingefær", "nøytral olje", "ris"],
+"ingredienser_med_mengde": [
+{"ingrediens": "kyllingfilét", "mengde": "400 g"},
+{"ingrediens": "paprika", "mengde": "1 stk"},
+{"ingrediens": "brokkoli", "mengde": "0.5 stk"},
+{"ingrediens": "gulrot", "mengde": "1 stk"},
+{"ingrediens": "soyasaus", "mengde": "3 ss"},
+{"ingrediens": "hvitløk", "mengde": "1 fedd"},
+{"ingrediens": "ingefær", "mengde": "1 ts (revet)"},
+{"ingrediens": "nøytral olje", "mengde": "2 ss"},
+{"ingrediens": "ris", "mengde": "2.5 dl"}
+],
+"instruksjoner": [
+"Kok ris etter anvisning på pakken.",
+"Skjær kyllingfilét og grønnsaker i strimler/biter.",
+"Stek kyllingen på høy varme i olje til den er gjennomstekt. Ta den ut av pannen.",
+"Wokk grønnsakene raskt på høy varme sammen med finhakket hvitløk og ingefær.",
+"Bland kyllingen tilbake i pannen, hell over soyasaus og rør alt godt sammen.",
+"Serveres varm med nykokt ris."
+],
+"bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+},
+{
+"id": "oppskrift_006",
+"tittel": "Stekt Laks med Sandefjordsmør og Poteter",
+"kategori": "Middag",
+"porsjoner": 4,
+"tilberedningstid_min": 30,
+"ingredienser": ["laks", "potet", "kremfløte", "smør", "sitron", "persille", "salt", "pepper"],
+"ingredienser_med_mengde": [
+{"ingrediens": "laks", "mengde": "600 g (filét)"},
+{"ingrediens": "potet", "mengde": "800 g"},
+{"ingrediens": "kremfløte", "mengde": "1.5 dl"},
+{"ingrediens": "smør", "mengde": "150 g"},
+{"ingrediens": "sitron", "mengde": "0.5 stk (saften)"},
+{"ingrediens": "persille", "mengde": "2 ss (hakket)"},
+{"ingrediens": "salt", "mengde": "1 ts"},
+{"ingrediens": "pepper", "mengde": "0.5 ts"}
+],
+"instruksjoner": [
+"Kok potetene i lettsaltet vann til de er møre.",
+"Krydre laksefilétene med salt og pepper. Stek dem i smør på middels høy varme i 3–4 minutter på hver side.",
+"Kok opp kremfløte i en liten kjele og la den redusere litt.",
+"Ta kjelen av varmen og visp inn kalde smørterninger litt og litt til en blank saus.",
+"Smak sausen til med sitronsaft, salt og frisk persille.",
+"Server laksen med kokte poteter og smørsaus."
+],
+"bilde_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2"
+},
+{
+"id": "oppskrift_007",
+"tittel": "Guacamole og Tortillachips",
+"kategori": "Snacks / Tilbehør",
+"porsjoner": 4,
+"tilberedningstid_min": 10,
+"ingredienser": ["avokado", "lime", "hvitløk", "tomat", "rødløk", "koriander", "salt", "pepper", "tortillachips"],
+"ingredienser_med_mengde": [
+{"ingrediens": "avokado", "mengde": "2 stk (modne)"},
+{"ingrediens": "lime", "mengde": "0.5 stk (saften)"},
+{"ingrediens": "hvitløk", "mengde": "1 fedd (presset)"},
+{"ingrediens": "tomat", "mengde": "1 stk (i små terninger)"},
+{"ingrediens": "rødløk", "mengde": "0.25 stk (finhakket)"},
+{"ingrediens": "koriander", "mengde": "2 ss (hakket)"},
+{"ingrediens": "salt", "mengde": "0.5 ts"},
+{"ingrediens": "pepper", "mengde": "1 klype"},
+{"ingrediens": "tortillachips", "mengde": "1 pose"}
+],
+"instruksjoner": [
+"Del avokadoene, ta ut steinen og mos avokadokjøttet med en gaffel.",
+"Press limesaft over for å forhindre misfarging og gi smak.",
+"Bland inn finhakket rødløk, presset hvitløk, tomatterninger og hakket koriander.",
+"Smak til med salt og pepper.",
+"Server umiddelbart med tortillachips."
+],
+"bilde_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999"
+},
+{
+"id": "oppskrift_008",
+"tittel": "Klassisk Havregrøt",
+"kategori": "Frokost",
+"porsjoner": 1,
+"tilberedningstid_min": 10,
+"ingredienser": ["havregryn", "vann", "melk", "salt", "kanel", "sukker", "smør"],
+"ingredienser_med_mengde": [
+{"ingrediens": "havregryn", "mengde": "1.5 dl"},
+{"ingrediens": "vann", "mengde": "1.5 dl"},
+{"ingrediens": "melk", "mengde": "1.5 dl"},
+{"ingrediens": "salt", "mengde": "1 klype"},
+{"ingrediens": "kanel", "mengde": "1 ts"},
+{"ingrediens": "sukker", "mengde": "1 ts"},
+{"ingrediens": "smør", "mengde": "1 ts"}
+],
+"instruksjoner": [
+"Bland havregryn, vann, melk og en klype salt i en kjele.",
+"Kok opp under omrøring på middels varme.",
+"La grøten småkoke i ca. 5 minutter til den har fått en fin og kremet konsistens.",
+"Hell grøten i en skål og topp med smørøye, kanel og sukker."
+],
+"bilde_url": "https://images.unsplash.com/photo-1517673400267-0251440c45dc"
+},
+{
+"id": "rec_001",
+"tittel": "Klassiske Pannekaker",
+"kategori": "Frokost/Kveldsmat",
+"ingredienser": ["hvetemel", "melk", "egg", "smør", "salt"],
+"tilberedningstid_minutter": 25,
+"instruksjoner": [
+"Bland mel og salt i en bolle.",
+"Visp inn halvparten av melken til en klumpfri røre.",
+"Tilsett resten av melken og visp inn eggene.",
+"La røren svelle i 15-20 minutter.",
+"Smelt litt smør i en varm stekepanne og stek pannekakene gylne på begge sider."
+]
+},
+{
+"id": "rec_002",
+"tittel": "Spaghetti Carbonara",
+"kategori": "Middag",
+"ingredienser": ["spaghetti", "bacon", "egg", "parmesan", "svart pepper", "salt"],
+"tilberedningstid_minutter": 20,
+"instruksjoner": [
+"Kok spaghettien i rikelig med saltet vann etter anvisningen på pakken.",
+"Stek bacon i en panne til det er sprøtt.",
+"Visp sammen egg, finrevet parmesan og kvernet svart pepper i en bolle.",
+"Ha den nykøkte pastaen over i pannen med bacon, ta pannen av varmen.",
+"Hell i egg- og osteblandingen og rør raskt om slik at det blir en kremet saus uden at eggene størkner."
+]
+},
+{
+"id": "rec_003",
+"tittel": "Kremet Tomatsuppe",
+"kategori": "Middag/Lunsj",
+"ingredienser": ["hermetiske tomater", "gulrot", "løk", "hvitløk", "grønnsaksbuljong", "fløte", "olivenolje", "salt", "pepper"],
+"tilberedningstid_minutter": 30,
+"instruksjoner": [
+"Finhakk løk, hvitløk og terning gulrot.",
+"Fres grønnsakene møre i olivenolje i en kasserolle.",
+"Tilsett hermetiske tomater og grønnsaksbuljong.",
+"La suppen småkoke i 15 minutter.",
+"Kjør suppen jevn med en stavmikser, rør inn fløte og smak til med salt og pepper."
+]
+},
+{
+"id": "rec_004",
+"tittel": "Omelett med Ost og Skinke",
+"kategori": "Frokost/Lunsj",
+"ingredienser": ["egg", "vann", "skinke", "hvitost", "smør", "salt", "pepper", "gressløk"],
+"tilberedningstid_minutter": 10,
+"instruksjoner": [
+"Visp sammen egg, vann, salt og pepper i en bolle.",
+"Smelt smør i en stekepanne på middels varme.",
+"Hell i eggerøren og skyv den forsiktig inn mot midten etter hvert som den stivner.",
+"Legg på strimlet skinke og revet ost på den ene halvdelen.",
+"Brett den andre halvdelen over og dryss over gressløk før servering."
+]
+},
+{
+"id": "rec_005",
+"tittel": "Kylling Tacos",
+"kategori": "Middag",
+"ingredienser": ["kyllingfilét", "tacokrydder", "tortilla", "tomat", "agurk", "mais", "rømme", "hvitost", "salsa"],
+"tilberedningstid_minutter": 20,
+"instruksjoner": [
+"Skjær kyllingfilét i strimler og stek til den er gjennomstekt.",
+"Tilsatt tacokrydder og litt vann, la det simre i 3-4 minutter.",
+"Kutt grønnsakene i mindre biter.",
+"Varm tortillas etter anvisning på pakken.",
+"Fyll tortillas med kylling, grønnsaker, ost, rømme og salsa."
+]
+},
+{
+"id": "rec_006",
+"tittel": "Kjøttkaker i Brun Saus",
+"kategori": "Middag",
+"ingredienser": ["kjøttdeig", "salt", "pepper", "potetmel", "melk", "egg", "løk", "smør", "hvetemel", "kjøttbuljong"],
+"tilberedningstid_minutter": 45,
+"instruksjoner": [
+"Rør kjøttdeig godt med salt, pepper og potetmel.",
+"Sped med melk og egg litt etter litt, rør inn finhakket løk.",
+"Form til runde kjøttkaker og brun dem i smør i en stekepanne.",
+"Lag brun saus ved å brune smør og hvetemel i en kasserolle og spe med kjøttbuljong.",
+"Legg kjøttkakene over i sausen og la dem trekke i ca. 15 minutter til de er gjennomkokt."
+]
+},
+{
+"id": "rec_007",
+"tittel": "Ovnsbakt Laksefilét",
+"kategori": "Middag",
+"ingredienser": ["laksefilét", "citron", "olivolje", "salt", "pepper", "dill", "rømme", "potet"],
+"tilberedningstid_minutter": 30,
+"instruksjoner": [
+"Forvarm stekeovnen til 200 grader.",
+"Legg laksefilétene i en ildfast form.",
+"Ringle over olivenolje, press over sitronsaft og krydre med salt, pepper og dill.",
+"Bak i ovnen i 12-15 minutter til laksen er akkurat gjennomstekt.",
+"Serveres med kokte poteter og en daddel rømme."
+]
+},
+{
+"id": "rec_008",
+"tittel": "Grønnsakswok med Soyasaus",
+"kategori": "Middag",
+"ingredienser": ["broccoli", "paprika", "gulrot", "scampi", "soyasaus", "hvitløk", "ingefær", "sesamolje", "ris"],
+"tilberedningstid_minutter": 20,
+"instruksjoner": [
+"Kok ris etter anvisning på pakken.",
+"Kutt grønnsakene i jevnstore biter.",
+"Varm sesamolje i en wok eller dyp stekepanne, tilsett finhakket hvitløk og ingefær.",
+"Stek grønnsakene raskt på høy varme til de er sprømøre.",
+"Tilsatt scampi og soyasaus, stek i et par minutter til scampien er rosa og varm."
+]
+},
+{
+"id": "rec_009",
+"tittel": "Klassisk Guacamole",
+"kategori": "Tilbehør/Dip",
+"ingredienser": ["avokado", "lime", "hvitløk", "tomat", "rødløk", "koriander", "salt", "pepper"],
+"tilberedningstid_minutter": 10,
+"instruksjoner": [
+"Del avokadoene, ta ut steinen og mos fruktkjøttet i en bolle.",
+"Press over fersk limesaft med en gang.",
+"Finhakk hvitløk, rødløk, tomat og koriander, og rør inn i avokadomosen.",
+"Smak til med salt og kvernet pepper."
+]
+},
+{
+"id": "rec_010",
+"tittel": "Havregrynsgrøt med Kanel og Eple",
+"kategori": "Frokost",
+"ingredienser": ["havregryn", "melk", "vann", "salt", "eple", "kanel", "sukker", "smør"],
+"tilberedningstid_minutter": 10,
+"instruksjoner": [
+"Bland havregryn, melk, vann og en klype salt i en kasserolle.",
+"Kok opp under omrøring og la det småkoke i 5 minutter.",
+"Skjær eple i terninger eller tynne skiver.",
+"Hell grøten i en skål, topp med eplebiter, kanel, litt sukker og et smørøye."
+]
+},
+{
+"id": "rec_011",
+"tittel": "Ceasarsalat med Kylling",
+"kategori": "Lunsj/Middag",
+"ingredienser": ["kyllingfilét", "hjertesalat", "parmesan", "krutonger", "majones", "hvitløk", "sitron", "dijonsennep", "anchovis"],
+"tilberedningstid_minutter": 25,
+"instruksjoner": [
+"Krydre og stek kyllingfiléten til den er gjennomstekt, la den hvile før du skjærer den i skiver.",
+"Bland majones, finhakket hvitløk, sitronsaft, dijonsennep og knust anchovis til en dressing.",
+"Vask og riv hjertesalat i biter, vend inn dressingen.",
+"Anrett salaten på tallerkener, topp med skivet kylling, krutonger og høvlet parmesan."
+]
+},
+{
+"id": "rec_012",
+"tittel": "Klassisk Lasagne",
+"kategori": "Middag",
+"ingredienser": ["kjøttdeig", "lasagneplater", "hermetiske tomater", "tomatpuré", "løk", "hvitløk", "hvetemel", "smør", "melk", "hvitost", "oregano"],
+"tilberedningstid_minutter": 75,
+"instruksjoner": [
+"Brun kjøttdeig med løk og hvitløk. Tilsett hermetiske tomater, tomatpuré og oregano, la det koke i 15 min.",
+"Lag hvit saus ved å smelte smør, røre inn mel og spe med melk til en tykk saus. Rør inn litt revet ost.",
+"Legg kjøttsaus, hvit saus og lasagneplater lagvis i en ildfast form.",
+"Topp med resten av den revne osten og stek på 200 grader i ca. 30-40 minutter."
+]
+},
+{
+"id": "rec_013",
+"tittel": "Grønnsakssuppe med Pølse",
+"kategori": "Middag",
+"ingredienser": ["kjøttpølse", "potet", "gulrot", "kålrot", "purre", "grønnsaksbuljong", "vann", "persille", "salt", "pepper"],
+"tilberedningstid_minutter": 35,
+"instruksjoner": [
+"Skrell og kutt poteter, gulrøtter og kålrot i terninger.",
+"Kutt purre i ringer og kjøttpølse i skiver.",
+"Kok opp vann og buljong i en stor kasserolle, tilsett rotgrønnsakene og la koke i 15 minutter.",
+"Tilsett pølser og purre, la alt småkoke til grønnsakene er helt møre.",
+"Dryss over frisk persille før servering."
+]
+},
+{
+"id": "rec_014",
+"tittel": "Gresk Salat",
+"kategori": "Lunsj/Middag",
+"ingredienser": ["tomat", "agurk", "rødløk", "fetaost", "oliven", "olivenolje", "oregano", "salt"],
+"tilberedningstid_minutter": 15,
+"instruksjoner": [
+"Kutt tomater og agurk i grove biter.",
+"Skjær rødløk i tynne ringer og terning fetaosten.",
+"Bland alle ingrediensene forsiktig sammen i en bolle med svarte oliven.",
+"Ringle over en god olivenolje og dryss med tørket oregano og litt salt."
+]
+},
+{
+"id": "rec_015",
+"tittel": "Chili con Carne",
+"kategori": "Middag",
+"ingredienser": ["kjøttdeig", "hermetiske tomater", "kidneybønner", "chili", "paprika", "løk", "hvitløk", "spisskummen", "mørk sjokolade"],
+"tilberedningstid_minutter": 40,
+"instruksjoner": [
+"Brun kjøttdeig sammen med løk, hvitløk og finhakket chili.",
+"Tilsett spisskummen, paprika i terninger og hermetiske tomater.",
+"La gryten småkoke i 20 minutter til smaken har satt seg.",
+"Skyll bønne og rør dem inn mot slutten sammen med en bit mørk sjokolade for fylde.",
+"Serveres gjerne med ris eller rømme."
+]
+}
+]
