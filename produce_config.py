@@ -1,7 +1,5 @@
-
-COLOR_BINS = ["red", "orange", "yellow", "green", "brown", "white", "dark", "purple", "other"]
-
 PRODUCE = {
+    # Grønnsaker
     "Tomato": {
         "no": "Tomat",
         "prompts": ["a photo of a ripe red tomato", "a photo of fresh tomatoes on a vine"],
@@ -110,7 +108,7 @@ PRODUCE = {
             "a photo of white garlic",
             "a photo of garlic cloves"
         ],
-        "colors": [{"white": 0.7, "yellow": 0.15, "brown": 0.1, "other": 0.05}],
+        "colors": [{"white": 0.7, "yellow": 0.15, "brown": 0.1, "dark": 0.05}],
         "aspect": (0.8, 1.3),
     },
     "Eggplant": {
@@ -125,7 +123,7 @@ PRODUCE = {
         "colors": [{"green": 0.6, "dark": 0.3, "brown": 0.1}],
         "aspect": (1.2, 2.0),
     },
-        "Ginger": {
+    "Ginger": {
         "no": "Ingefær",
         "prompts": ["a photo of fresh ginger root", "a photo of a piece of raw ginger"],
         "colors": [{"brown": 0.5, "yellow": 0.3, "orange": 0.2}],
@@ -134,7 +132,7 @@ PRODUCE = {
     "Spinach": {
         "no": "Spinat",
         "prompts": ["a photo of fresh spinach leaves", "a photo of green spinach"],
-        "colors": [{"green": 0.8, "dark": 0.15, "other": 0.05}],
+        "colors": [{"green": 0.8, "dark": 0.15, "yellow": 0.05}],
         "aspect": (0.5, 2.0),
     },
     "Kale": {
@@ -191,7 +189,7 @@ PRODUCE = {
         "colors": [{"green": 0.8, "yellow": 0.15, "white": 0.05}],
         "aspect": (2.0, 8.0),
     },
-        "Parsley": {
+    "Parsley": {
         "no": "Persille",
         "prompts": ["a photo of fresh parsley", "a bunch of green parsley leaves"],
         "colors": [{"green": 0.85, "dark": 0.1, "yellow": 0.05}],
@@ -204,7 +202,7 @@ PRODUCE = {
         "aspect": (2.0, 6.0),
     },
     
-    # ========== FRUKT ==========
+    # Frukt
     "Apple": {
         "no": "Eple",
         "prompts": ["a photo of red apples", "a photo of a red apple", "a photo of fresh apples on a table"],
@@ -244,7 +242,7 @@ PRODUCE = {
     "Grapefruit": {
         "no": "Grapefrukt",
         "prompts": ["a photo of grapefruit", "a photo of fresh grapefruits"],
-        "colors": [{"orange": 0.6, "yellow": 0.3, "pink": 0.1}],
+        "colors": [{"orange": 0.6, "yellow": 0.3, "red": 0.1}],
         "aspect": (0.8, 1.3),
     },
     "Grapes": {
@@ -268,7 +266,7 @@ PRODUCE = {
     "Raspberry": {
         "no": "Bringebær",
         "prompts": ["a photo of raspberries", "a photo of fresh raspberries"],
-        "colors": [{"red": 0.8, "purple": 0.15, "other": 0.05}],
+        "colors": [{"red": 0.8, "purple": 0.15, "dark": 0.05}],
         "aspect": (0.8, 1.3),
     },
     "Blackberry": {
@@ -339,6 +337,7 @@ PRODUCE = {
     },
 }
 
+# Tekster for ting som ikke er frukt og grønt (gir «ukjent»)
 UNKNOWN_LABEL = "unknown"
 NEGATIVE_PROMPTS = [
     "a photo of packaged food",

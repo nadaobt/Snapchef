@@ -1,418 +1,1055 @@
 [
-{
-"id": "oppskrift_001",
-"tittel": "Klassiske Pannekaker",
-"kategori": "Frokost / Kveldsmat",
-"porsjoner": 4,
-"tilberedningstid_min": 25,
-"ingredienser": ["hvetemel", "melk", "egg", "smør", "salt"],
-"ingredienser_med_mengde": [
-{"ingrediens": "hvetemel", "mengde": "3 dl"},
-{"ingrediens": "melk", "mengde": "6 dl"},
-{"ingrediens": "egg", "mengde": "3 stk"},
-{"ingrediens": "smør", "mengde": "2 ss (smeltet)"},
-{"ingrediens": "salt", "mengde": "0.5 ts"}
-],
-"instruksjoner": [
-"Visp sammen hvetemel og litt av melken til en klumpfri røre.",
-"Tilsett resten av melken og visp inn egget.",
-"Rør inn smeltet smør og salt.",
-"La røren svelle i ca. 15-20 minutter.",
-"Stek tynne pannekaker i en varm panne med litt smør."
-],
-"bilde_url": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445"
-},
-{
-"id": "oppskrift_002",
-"tittel": "Omelett med Ost og Skinke",
-"kategori": "Frokost / Lunsj",
-"porsjoner": 2,
-"tilberedningstid_min": 10,
-"ingredienser": ["egg", "melk", "hvitost", "skinke", "smør", "salt", "pepper"],
-"ingredienser_med_mengde": [
-{"ingrediens": "egg", "mengde": "4 stk"},
-{"ingrediens": "melk", "mengde": "4 ss"},
-{"ingrediens": "hvitost", "mengde": "50 g (revet)"},
-{"ingrediens": "skinke", "mengde": "50 g (i terninger)"},
-{"ingrediens": "smør", "mengde": "1 ss"},
-{"ingrediens": "salt", "mengde": "1 klype"},
-{"ingrediens": "pepper", "mengde": "1 klype"}
-],
-"instruksjoner": [
-"Visp sammen egg, melk, salt og pepper i en bolle.",
-"Smelt smør i en stekepanne på middels varme.",
-"Hell i eggeblandingen og skyv den forsiktig inn mot midten etter hvert som den stivner.",
-"Legg ost og skinke på den ene halvdelen.",
-"Brett omeletten i to og server når osten har smeltet."
-],
-"bilde_url": "https://images.unsplash.com/photo-1510693206972-df098062cb71"
-},
-{
-"id": "oppskrift_003",
-"tittel": "Kremet Tomatsuppe",
-"kategori": "Middag / Lunsj",
-"porsjoner": 4,
-"tilberedningstid_min": 20,
-"ingredienser": ["hermetiske tomater", "gulrot", "løk", "hvitløk", "grønnsaksbuljong", "kremfløte", "olivenolje", "salt", "pepper"],
-"ingredienser_med_mengde": [
-{"ingrediens": "hermetiske tomater", "mengde": "2 bokser (800 g)"},
-{"ingrediens": "gulrot", "mengde": "1 stk"},
-{"ingrediens": "løk", "mengde": "1 stk"},
-{"ingrediens": "hvitløk", "mengde": "2 fedd"},
-{"ingrediens": "grønnsaksbuljong", "mengde": "5 dl"},
-{"ingrediens": "kremfløte", "mengde": "1 dl"},
-{"ingrediens": "olivenolje", "mengde": "2 ss"},
-{"ingrediens": "salt", "mengde": "1 ts"},
-{"ingrediens": "pepper", "mengde": "0.5 ts"}
-],
-"instruksjoner": [
-"Finhakk løk, hvitløk og rasp gulroten.",
-"Fres løk, hvitløk og gulrot i olivenolje i en kjele til løken er blank.",
-"Tilsatt hermetiske tomater og grønnsaksbuljong. La småkoke i 15 minutter.",
-"Kjør suppen jevn med en stavmikser.",
-"Rør inn kremfløte, og smak til med salt og pepper."
-],
-"bilde_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
-},
-{
-"id": "oppskrift_004",
-"tittel": "Spaghetti Bolognese",
-"kategori": "Middag",
-"porsjoner": 4,
-"tilberedningstid_min": 30,
-"ingredienser": ["kjøttdeig", "spaghetti", "hermetiske tomater", "tomatpuré", "løk", "hvitløk", "gulrot", "olivenolje", "oregano", "salt", "pepper"],
-"ingredienser_med_mengde": [
-{"ingrediens": "kjøttdeig", "mengde": "400 g"},
-{"ingrediens": "spaghetti", "mengde": "350 g"},
-{"ingrediens": "hermetiske tomater", "mengde": "1 boks (400 g)"},
-{"ingrediens": "tomatpuré", "mengde": "2 ss"},
-{"ingrediens": "løk", "mengde": "1 stk"},
-{"ingrediens": "hvitløk", "mengde": "2 fedd"},
-{"ingrediens": "gulrot", "mengde": "1 stk (finrevet)"},
-{"ingrediens": "olivenolje", "mengde": "1 ss"},
-{"ingrediens": "oregano", "mengde": "1 ts"},
-{"ingrediens": "salt", "mengde": "1 ts"},
-{"ingrediens": "pepper", "mengde": "0.5 ts"}
-],
-"instruksjoner": [
-"Brun kjøttdeigen i en varm panne med olje.",
-"Tilsett hakket løk, hvitløk og finrevet gulrot, og la det frese et par minutter.",
-"Rør inn tomatpuré, hermetiske tomater og oregano.",
-"La sausen småkoke i ca. 15–20 minutter. Smak til med salt og pepper.",
-"Kok spaghetti i rikelig med lettsaltet vann etter anvisningen på pakken.",
-"Server spaghettien med kjøttsaus på toppen."
-],
-"bilde_url": "https://images.unsplash.com/photo-1621996346565-e3def6164bc3"
-},
-{
-"id": "oppskrift_005",
-"tittel": "Kylling Wok med Grønnsaker",
-"kategori": "Middag",
-"porsjoner": 3,
-"tilberedningstid_min": 20,
-"ingredienser": ["kyllingfilét", "paprika", "brokkoli", "gulrot", "soyasaus", "hvitløk", "ingefær", "nøytral olje", "ris"],
-"ingredienser_med_mengde": [
-{"ingrediens": "kyllingfilét", "mengde": "400 g"},
-{"ingrediens": "paprika", "mengde": "1 stk"},
-{"ingrediens": "brokkoli", "mengde": "0.5 stk"},
-{"ingrediens": "gulrot", "mengde": "1 stk"},
-{"ingrediens": "soyasaus", "mengde": "3 ss"},
-{"ingrediens": "hvitløk", "mengde": "1 fedd"},
-{"ingrediens": "ingefær", "mengde": "1 ts (revet)"},
-{"ingrediens": "nøytral olje", "mengde": "2 ss"},
-{"ingrediens": "ris", "mengde": "2.5 dl"}
-],
-"instruksjoner": [
-"Kok ris etter anvisning på pakken.",
-"Skjær kyllingfilét og grønnsaker i strimler/biter.",
-"Stek kyllingen på høy varme i olje til den er gjennomstekt. Ta den ut av pannen.",
-"Wokk grønnsakene raskt på høy varme sammen med finhakket hvitløk og ingefær.",
-"Bland kyllingen tilbake i pannen, hell over soyasaus og rør alt godt sammen.",
-"Serveres varm med nykokt ris."
-],
-"bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
-},
-{
-"id": "oppskrift_006",
-"tittel": "Stekt Laks med Sandefjordsmør og Poteter",
-"kategori": "Middag",
-"porsjoner": 4,
-"tilberedningstid_min": 30,
-"ingredienser": ["laks", "potet", "kremfløte", "smør", "sitron", "persille", "salt", "pepper"],
-"ingredienser_med_mengde": [
-{"ingrediens": "laks", "mengde": "600 g (filét)"},
-{"ingrediens": "potet", "mengde": "800 g"},
-{"ingrediens": "kremfløte", "mengde": "1.5 dl"},
-{"ingrediens": "smør", "mengde": "150 g"},
-{"ingrediens": "sitron", "mengde": "0.5 stk (saften)"},
-{"ingrediens": "persille", "mengde": "2 ss (hakket)"},
-{"ingrediens": "salt", "mengde": "1 ts"},
-{"ingrediens": "pepper", "mengde": "0.5 ts"}
-],
-"instruksjoner": [
-"Kok potetene i lettsaltet vann til de er møre.",
-"Krydre laksefilétene med salt og pepper. Stek dem i smør på middels høy varme i 3–4 minutter på hver side.",
-"Kok opp kremfløte i en liten kjele og la den redusere litt.",
-"Ta kjelen av varmen og visp inn kalde smørterninger litt og litt til en blank saus.",
-"Smak sausen til med sitronsaft, salt og frisk persille.",
-"Server laksen med kokte poteter og smørsaus."
-],
-"bilde_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2"
-},
-{
-"id": "oppskrift_007",
-"tittel": "Guacamole og Tortillachips",
-"kategori": "Snacks / Tilbehør",
-"porsjoner": 4,
-"tilberedningstid_min": 10,
-"ingredienser": ["avokado", "lime", "hvitløk", "tomat", "rødløk", "koriander", "salt", "pepper", "tortillachips"],
-"ingredienser_med_mengde": [
-{"ingrediens": "avokado", "mengde": "2 stk (modne)"},
-{"ingrediens": "lime", "mengde": "0.5 stk (saften)"},
-{"ingrediens": "hvitløk", "mengde": "1 fedd (presset)"},
-{"ingrediens": "tomat", "mengde": "1 stk (i små terninger)"},
-{"ingrediens": "rødløk", "mengde": "0.25 stk (finhakket)"},
-{"ingrediens": "koriander", "mengde": "2 ss (hakket)"},
-{"ingrediens": "salt", "mengde": "0.5 ts"},
-{"ingrediens": "pepper", "mengde": "1 klype"},
-{"ingrediens": "tortillachips", "mengde": "1 pose"}
-],
-"instruksjoner": [
-"Del avokadoene, ta ut steinen og mos avokadokjøttet med en gaffel.",
-"Press limesaft over for å forhindre misfarging og gi smak.",
-"Bland inn finhakket rødløk, presset hvitløk, tomatterninger og hakket koriander.",
-"Smak til med salt og pepper.",
-"Server umiddelbart med tortillachips."
-],
-"bilde_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999"
-},
-{
-"id": "oppskrift_008",
-"tittel": "Klassisk Havregrøt",
-"kategori": "Frokost",
-"porsjoner": 1,
-"tilberedningstid_min": 10,
-"ingredienser": ["havregryn", "vann", "melk", "salt", "kanel", "sukker", "smør"],
-"ingredienser_med_mengde": [
-{"ingrediens": "havregryn", "mengde": "1.5 dl"},
-{"ingrediens": "vann", "mengde": "1.5 dl"},
-{"ingrediens": "melk", "mengde": "1.5 dl"},
-{"ingrediens": "salt", "mengde": "1 klype"},
-{"ingrediens": "kanel", "mengde": "1 ts"},
-{"ingrediens": "sukker", "mengde": "1 ts"},
-{"ingrediens": "smør", "mengde": "1 ts"}
-],
-"instruksjoner": [
-"Bland havregryn, vann, melk og en klype salt i en kjele.",
-"Kok opp under omrøring på middels varme.",
-"La grøten småkoke i ca. 5 minutter til den har fått en fin og kremet konsistens.",
-"Hell grøten i en skål og topp med smørøye, kanel og sukker."
-],
-"bilde_url": "https://images.unsplash.com/photo-1517673400267-0251440c45dc"
-},
-{
-"id": "rec_001",
-"tittel": "Klassiske Pannekaker",
-"kategori": "Frokost/Kveldsmat",
-"ingredienser": ["hvetemel", "melk", "egg", "smør", "salt"],
-"tilberedningstid_minutter": 25,
-"instruksjoner": [
-"Bland mel og salt i en bolle.",
-"Visp inn halvparten av melken til en klumpfri røre.",
-"Tilsett resten av melken og visp inn eggene.",
-"La røren svelle i 15-20 minutter.",
-"Smelt litt smør i en varm stekepanne og stek pannekakene gylne på begge sider."
-]
-},
-{
-"id": "rec_002",
-"tittel": "Spaghetti Carbonara",
-"kategori": "Middag",
-"ingredienser": ["spaghetti", "bacon", "egg", "parmesan", "svart pepper", "salt"],
-"tilberedningstid_minutter": 20,
-"instruksjoner": [
-"Kok spaghettien i rikelig med saltet vann etter anvisningen på pakken.",
-"Stek bacon i en panne til det er sprøtt.",
-"Visp sammen egg, finrevet parmesan og kvernet svart pepper i en bolle.",
-"Ha den nykøkte pastaen over i pannen med bacon, ta pannen av varmen.",
-"Hell i egg- og osteblandingen og rør raskt om slik at det blir en kremet saus uden at eggene størkner."
-]
-},
-{
-"id": "rec_003",
-"tittel": "Kremet Tomatsuppe",
-"kategori": "Middag/Lunsj",
-"ingredienser": ["hermetiske tomater", "gulrot", "løk", "hvitløk", "grønnsaksbuljong", "fløte", "olivenolje", "salt", "pepper"],
-"tilberedningstid_minutter": 30,
-"instruksjoner": [
-"Finhakk løk, hvitløk og terning gulrot.",
-"Fres grønnsakene møre i olivenolje i en kasserolle.",
-"Tilsett hermetiske tomater og grønnsaksbuljong.",
-"La suppen småkoke i 15 minutter.",
-"Kjør suppen jevn med en stavmikser, rør inn fløte og smak til med salt og pepper."
-]
-},
-{
-"id": "rec_004",
-"tittel": "Omelett med Ost og Skinke",
-"kategori": "Frokost/Lunsj",
-"ingredienser": ["egg", "vann", "skinke", "hvitost", "smør", "salt", "pepper", "gressløk"],
-"tilberedningstid_minutter": 10,
-"instruksjoner": [
-"Visp sammen egg, vann, salt og pepper i en bolle.",
-"Smelt smør i en stekepanne på middels varme.",
-"Hell i eggerøren og skyv den forsiktig inn mot midten etter hvert som den stivner.",
-"Legg på strimlet skinke og revet ost på den ene halvdelen.",
-"Brett den andre halvdelen over og dryss over gressløk før servering."
-]
-},
-{
-"id": "rec_005",
-"tittel": "Kylling Tacos",
-"kategori": "Middag",
-"ingredienser": ["kyllingfilét", "tacokrydder", "tortilla", "tomat", "agurk", "mais", "rømme", "hvitost", "salsa"],
-"tilberedningstid_minutter": 20,
-"instruksjoner": [
-"Skjær kyllingfilét i strimler og stek til den er gjennomstekt.",
-"Tilsatt tacokrydder og litt vann, la det simre i 3-4 minutter.",
-"Kutt grønnsakene i mindre biter.",
-"Varm tortillas etter anvisning på pakken.",
-"Fyll tortillas med kylling, grønnsaker, ost, rømme og salsa."
-]
-},
-{
-"id": "rec_006",
-"tittel": "Kjøttkaker i Brun Saus",
-"kategori": "Middag",
-"ingredienser": ["kjøttdeig", "salt", "pepper", "potetmel", "melk", "egg", "løk", "smør", "hvetemel", "kjøttbuljong"],
-"tilberedningstid_minutter": 45,
-"instruksjoner": [
-"Rør kjøttdeig godt med salt, pepper og potetmel.",
-"Sped med melk og egg litt etter litt, rør inn finhakket løk.",
-"Form til runde kjøttkaker og brun dem i smør i en stekepanne.",
-"Lag brun saus ved å brune smør og hvetemel i en kasserolle og spe med kjøttbuljong.",
-"Legg kjøttkakene over i sausen og la dem trekke i ca. 15 minutter til de er gjennomkokt."
-]
-},
-{
-"id": "rec_007",
-"tittel": "Ovnsbakt Laksefilét",
-"kategori": "Middag",
-"ingredienser": ["laksefilét", "citron", "olivolje", "salt", "pepper", "dill", "rømme", "potet"],
-"tilberedningstid_minutter": 30,
-"instruksjoner": [
-"Forvarm stekeovnen til 200 grader.",
-"Legg laksefilétene i en ildfast form.",
-"Ringle over olivenolje, press over sitronsaft og krydre med salt, pepper og dill.",
-"Bak i ovnen i 12-15 minutter til laksen er akkurat gjennomstekt.",
-"Serveres med kokte poteter og en daddel rømme."
-]
-},
-{
-"id": "rec_008",
-"tittel": "Grønnsakswok med Soyasaus",
-"kategori": "Middag",
-"ingredienser": ["broccoli", "paprika", "gulrot", "scampi", "soyasaus", "hvitløk", "ingefær", "sesamolje", "ris"],
-"tilberedningstid_minutter": 20,
-"instruksjoner": [
-"Kok ris etter anvisning på pakken.",
-"Kutt grønnsakene i jevnstore biter.",
-"Varm sesamolje i en wok eller dyp stekepanne, tilsett finhakket hvitløk og ingefær.",
-"Stek grønnsakene raskt på høy varme til de er sprømøre.",
-"Tilsatt scampi og soyasaus, stek i et par minutter til scampien er rosa og varm."
-]
-},
-{
-"id": "rec_009",
-"tittel": "Klassisk Guacamole",
-"kategori": "Tilbehør/Dip",
-"ingredienser": ["avokado", "lime", "hvitløk", "tomat", "rødløk", "koriander", "salt", "pepper"],
-"tilberedningstid_minutter": 10,
-"instruksjoner": [
-"Del avokadoene, ta ut steinen og mos fruktkjøttet i en bolle.",
-"Press over fersk limesaft med en gang.",
-"Finhakk hvitløk, rødløk, tomat og koriander, og rør inn i avokadomosen.",
-"Smak til med salt og kvernet pepper."
-]
-},
-{
-"id": "rec_010",
-"tittel": "Havregrynsgrøt med Kanel og Eple",
-"kategori": "Frokost",
-"ingredienser": ["havregryn", "melk", "vann", "salt", "eple", "kanel", "sukker", "smør"],
-"tilberedningstid_minutter": 10,
-"instruksjoner": [
-"Bland havregryn, melk, vann og en klype salt i en kasserolle.",
-"Kok opp under omrøring og la det småkoke i 5 minutter.",
-"Skjær eple i terninger eller tynne skiver.",
-"Hell grøten i en skål, topp med eplebiter, kanel, litt sukker og et smørøye."
-]
-},
-{
-"id": "rec_011",
-"tittel": "Ceasarsalat med Kylling",
-"kategori": "Lunsj/Middag",
-"ingredienser": ["kyllingfilét", "hjertesalat", "parmesan", "krutonger", "majones", "hvitløk", "sitron", "dijonsennep", "anchovis"],
-"tilberedningstid_minutter": 25,
-"instruksjoner": [
-"Krydre og stek kyllingfiléten til den er gjennomstekt, la den hvile før du skjærer den i skiver.",
-"Bland majones, finhakket hvitløk, sitronsaft, dijonsennep og knust anchovis til en dressing.",
-"Vask og riv hjertesalat i biter, vend inn dressingen.",
-"Anrett salaten på tallerkener, topp med skivet kylling, krutonger og høvlet parmesan."
-]
-},
-{
-"id": "rec_012",
-"tittel": "Klassisk Lasagne",
-"kategori": "Middag",
-"ingredienser": ["kjøttdeig", "lasagneplater", "hermetiske tomater", "tomatpuré", "løk", "hvitløk", "hvetemel", "smør", "melk", "hvitost", "oregano"],
-"tilberedningstid_minutter": 75,
-"instruksjoner": [
-"Brun kjøttdeig med løk og hvitløk. Tilsett hermetiske tomater, tomatpuré og oregano, la det koke i 15 min.",
-"Lag hvit saus ved å smelte smør, røre inn mel og spe med melk til en tykk saus. Rør inn litt revet ost.",
-"Legg kjøttsaus, hvit saus og lasagneplater lagvis i en ildfast form.",
-"Topp med resten av den revne osten og stek på 200 grader i ca. 30-40 minutter."
-]
-},
-{
-"id": "rec_013",
-"tittel": "Grønnsakssuppe med Pølse",
-"kategori": "Middag",
-"ingredienser": ["kjøttpølse", "potet", "gulrot", "kålrot", "purre", "grønnsaksbuljong", "vann", "persille", "salt", "pepper"],
-"tilberedningstid_minutter": 35,
-"instruksjoner": [
-"Skrell og kutt poteter, gulrøtter og kålrot i terninger.",
-"Kutt purre i ringer og kjøttpølse i skiver.",
-"Kok opp vann og buljong i en stor kasserolle, tilsett rotgrønnsakene og la koke i 15 minutter.",
-"Tilsett pølser og purre, la alt småkoke til grønnsakene er helt møre.",
-"Dryss over frisk persille før servering."
-]
-},
-{
-"id": "rec_014",
-"tittel": "Gresk Salat",
-"kategori": "Lunsj/Middag",
-"ingredienser": ["tomat", "agurk", "rødløk", "fetaost", "oliven", "olivenolje", "oregano", "salt"],
-"tilberedningstid_minutter": 15,
-"instruksjoner": [
-"Kutt tomater og agurk i grove biter.",
-"Skjær rødløk i tynne ringer og terning fetaosten.",
-"Bland alle ingrediensene forsiktig sammen i en bolle med svarte oliven.",
-"Ringle over en god olivenolje og dryss med tørket oregano og litt salt."
-]
-},
-{
-"id": "rec_015",
-"tittel": "Chili con Carne",
-"kategori": "Middag",
-"ingredienser": ["kjøttdeig", "hermetiske tomater", "kidneybønner", "chili", "paprika", "løk", "hvitløk", "spisskummen", "mørk sjokolade"],
-"tilberedningstid_minutter": 40,
-"instruksjoner": [
-"Brun kjøttdeig sammen med løk, hvitløk og finhakket chili.",
-"Tilsett spisskummen, paprika i terninger og hermetiske tomater.",
-"La gryten småkoke i 20 minutter til smaken har satt seg.",
-"Skyll bønne og rør dem inn mot slutten sammen med en bit mørk sjokolade for fylde.",
-"Serveres gjerne med ris eller rømme."
-]
-}
+  {
+    "id": "recipe_001",
+    "tittel": "Classic Pancakes",
+    "kategori": "Breakfast",
+    "kjokken": "Norsk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 280, "karbohydrater_g": 38, "proteiner_g": 9, "fett_g": 10 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Mel", "Melk", "Egg", "Smør", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Mel", "mengde": "3 dl" },
+      { "ingrediens": "Melk", "mengde": "6 dl" },
+      { "ingrediens": "Egg", "mengde": "3 stk" },
+      { "ingrediens": "Smør", "mengde": "2 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Visp sammen mel og litt melk.", "Tilsett resten av melken og eggene.", "Rør inn smeltet smør og salt.", "La svulme i 15-20 minutter og stek i panne."],
+    "bilde_url": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445"
+  },
+  {
+    "id": "recipe_002",
+    "tittel": "Kjøttkaker i brun saus",
+    "kategori": "Dinner",
+    "kjokken": "Norsk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 520, "karbohydrater_g": 30, "proteiner_g": 35, "fett_g": 26 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 40,
+    "ingredienser": ["Kjøttdeig", "Løk", "Mel", "Melk", "Salt", "Pepper", "Potet", "Gulrot"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kjøttdeig", "mengde": "500 g" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Mel", "mengde": "2 ss" },
+      { "ingrediens": "Melk", "mengde": "3 dl" },
+      { "ingrediens": "Salt", "mengde": "1 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" },
+      { "ingrediens": "Potet", "mengde": "8 stk" },
+      { "ingrediens": "Gulrot", "mengde": "4 stk" }
+    ],
+    "instruksjoner": ["Form kjøttdeig til kaker og stek dem gylne.", "Lag brun saus av smør, mel og kraft/melk.", "Kok poteter og gulrøtter.", "La kjøttkakene trekke i sausen før servering."],
+    "bilde_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb"
+  },
+  {
+    "id": "recipe_003",
+    "tittel": "Lapskaus med storfe",
+    "kategori": "Dinner",
+    "kjokken": "Norsk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 410, "karbohydrater_g": 45, "proteiner_g": 30, "fett_g": 12 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 60,
+    "ingredienser": ["Storfe", "Potet", "Gulrot", "Selleri", "Løk", "Salt", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Storfe", "mengde": "600 g" },
+      { "ingrediens": "Potet", "mengde": "6 stk" },
+      { "ingrediens": "Gulrot", "mengde": "4 stk" },
+      { "ingrediens": "Selleri", "mengde": "200 g" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Salt", "mengde": "1 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Brun kjøttet i en kjele.", "Kutt grønnsaker i terninger.", "Ha alt i kjelen med vann og la det koke til grønnsakene er møre.", "Smak til med salt og pepper."],
+    "bilde_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
+  },
+  {
+    "id": "recipe_004",
+    "tittel": "Stekt Laks med Kokte Poteter",
+    "kategori": "Dinner",
+    "kjokken": "Norsk",
+    "allergier": ["Glutenfri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 460, "karbohydrater_g": 35, "proteiner_g": 34, "fett_g": 20 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Laks", "Potet", "Fløte", "Smør", "Salt", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Laks", "mengde": "600 g" },
+      { "ingrediens": "Potet", "mengde": "8 stk" },
+      { "ingrediens": "Fløte", "mengde": "2 dl" },
+      { "ingrediens": "Smør", "mengde": "1 ss" },
+      { "ingrediens": "Salt", "mengde": "1 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Kok potetene møre.", "Stek laksen i en panne med smør.", "Lag en rask fløtesaus med salt og pepper.", "Server laksen med poteter og saus."],
+    "bilde_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2"
+  },
+  {
+    "id": "recipe_005",
+    "tittel": "Eggerøre med Smørbrød",
+    "kategori": "Breakfast",
+    "kjokken": "Norsk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 310, "karbohydrater_g": 20, "proteiner_g": 14, "fett_g": 18 },
+    "porsjoner": 2,
+    "tilberedningstid_min": 10,
+    "ingredienser": ["Egg", "Melk", "Smør", "Brød", "Salt", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Egg", "mengde": "4 stk" },
+      { "ingrediens": "Melk", "mengde": "0.5 dl" },
+      { "ingrediens": "Smør", "mengde": "1 ss" },
+      { "ingrediens": "Brød", "mengde": "4 skiver" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.25 ts" }
+    ],
+    "instruksjoner": ["Pisk egg, melk, salt og pepper sammen.", "Smelt smør i en panne på lav varme.", "Ha i eggene og rør forsiktig til det stivner.", "Server på nybakst brød."],
+    "bilde_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8"
+  },
+  {
+    "id": "recipe_006",
+    "tittel": "Fiskekaker i Brun Saus",
+    "kategori": "Dinner",
+    "kjokken": "Norsk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 380, "karbohydrater_g": 25, "proteiner_g": 22, "fett_g": 16 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Fisk", "Mel", "Smør", "Melk", "Potet", "Gulrot", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Fisk", "mengde": "500 g" },
+      { "ingrediens": "Mel", "mengde": "2 ss" },
+      { "ingrediens": "Smør", "mengde": "2 ss" },
+      { "ingrediens": "Melk", "mengde": "3 dl" },
+      { "ingrediens": "Potet", "mengde": "6 stk" },
+      { "ingrediens": "Gulrot", "mengde": "3 stk" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Stek fiskekakene gylne i pannen.", "Lag hvit saus / brun saus og spe med melk.", "Kok poteter og gulrøtter.", "Server varme fiskekaker med saus og grønnsaker."],
+    "bilde_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb"
+  },
+  {
+    "id": "recipe_007",
+    "tittel": "Rømmegrøt med Smør og Sukker",
+    "kategori": "Lunch",
+    "kjokken": "Norsk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 650, "karbohydrater_g": 30, "proteiner_g": 8, "fett_g": 55 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 30,
+    "ingredienser": ["Rømme", "Fløte", "Mel", "Smør", "Sukker", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Rømme", "mengde": "6 dl" },
+      { "ingrediens": "Fløte", "mengde": "2 dl" },
+      { "ingrediens": "Mel", "mengde": "3 dl" },
+      { "ingrediens": "Smør", "mengde": "1 ss" },
+      { "ingrediens": "Sukker", "mengde": "2 ss" },
+      { "ingrediens": "Salt", "mengde": "0.25 ts" }
+    ],
+    "instruksjoner": ["Kok opp rømme i en kjele i 2 minutter.", "Sikt i halvparten av melet og rør godt.", "La fettetskille seg ut og skum av.", "Ha i resten av melet, fløte og spe til en jevn grøt."],
+    "bilde_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+  },
+  {
+    "id": "recipe_008",
+    "tittel": "Kremet Fiskesuppe",
+    "kategori": "Dinner",
+    "kjokken": "Norsk",
+    "allergier": ["Glutenfri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 440, "karbohydrater_g": 18, "proteiner_g": 30, "fett_g": 28 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 35,
+    "ingredienser": ["Laks", "Fløte", "Smør", "Gulrot", "Purreløk", "Salt", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Laks", "mengde": "300 g" },
+      { "ingrediens": "Fløte", "mengde": "3 dl" },
+      { "ingrediens": "Smør", "mengde": "2 ss" },
+      { "ingrediens": "Gulrot", "mengde": "2 stk" },
+      { "ingrediens": "Purreløk", "mengde": "1 stk" },
+      { "ingrediens": "Salt", "mengde": "1 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Kutt gulrøtter og purreløk i strimler, og fres i smør.", "Tilsett fløte og la det småkoke.", "Del fisk i terninger og ha i suppen.", "La trekke til fisken er ferdig."],
+    "bilde_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
+  },
+  {
+    "id": "recipe_009",
+    "tittel": "Kompe / Raspeball",
+    "kategori": "Dinner",
+    "kjokken": "Norsk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 530, "karbohydrater_g": 60, "proteiner_g": 22, "fett_g": 20 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 90,
+    "ingredienser": ["Potet", "Mel", "Salt", "Bacon", "Svinekjøtt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Potet", "mengde": "1 kg" },
+      { "ingrediens": "Mel", "mengde": "3 dl" },
+      { "ingrediens": "Salt", "mengde": "1 ts" },
+      { "ingrediens": "Bacon", "mengde": "200 g" },
+      { "ingrediens": "Svinekjøtt", "mengde": "400 g" }
+    ],
+    "instruksjoner": ["Riv potetene og bland med mel og salt til en deig.", "Form baller med en terning svinekjøtt inni.", "Kok i salt vann i ca. 1 time.", "Server med stekt bacon."],
+    "bilde_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb"
+  },
+  {
+    "id": "recipe_010",
+    "tittel": "Hjemmelaget Jordbærgrøt",
+    "kategori": "Dessert",
+    "kjokken": "Norsk",
+    "allergier": ["Laktosefri", "Vegansk"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 180, "karbohydrater_g": 42, "proteiner_g": 1, "fett_g": 0 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Jordbær", "Sukker", "Mel", "Vann"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Jordbær", "mengde": "500 g" },
+      { "ingrediens": "Sukker", "mengde": "1.5 dl" },
+      { "ingrediens": "Mel", "mengde": "3 ss" },
+      { "ingrediens": "Vann", "mengde": "4 dl" }
+    ],
+    "instruksjoner": ["Kok opp jordbær, vann og sukker.", "Rør ut potetmel/mel i litt kaldt vann og tilsett under omrøring.", "Gi et raskt oppkok og ta av platen.", "Avkjøl og server med melk eller fløte."],
+    "bilde_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+  },
+  {
+    "id": "recipe_011",
+    "tittel": "Shakshuka",
+    "kategori": "Breakfast",
+    "kjokken": "Arabisk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 310, "karbohydrater_g": 18, "proteiner_g": 16, "fett_g": 20 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Egg", "Tomat", "Paprika", "Løk", "Hvitløk", "Olivenolje", "Salt", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Egg", "mengde": "4 stk" },
+      { "ingrediens": "Tomat", "mengde": "5 stk" },
+      { "ingrediens": "Paprika", "mengde": "1 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Stek hakket løk, hvitløk og paprika i olivenolje.", "Tilsett hakkede tomater og la det koke inn til en tykk saus.", "Lag små fordypninger i sausen og knekk eggene oppi.", "La koke til eggehvitene har stivnet."],
+    "bilde_url": "https://images.unsplash.com/photo-1590412200988-a46697078ad5"
+  },
+  {
+    "id": "recipe_012",
+    "tittel": "Kylling Mandi",
+    "kategori": "Dinner",
+    "kjokken": "Arabisk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 580, "karbohydrater_g": 65, "proteiner_g": 40, "fett_g": 18 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 50,
+    "ingredienser": ["Kylling", "Ris", "Løk", "Hvitløk", "Olivenolje", "Salt", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "800 g" },
+      { "ingrediens": "Ris", "mengde": "4 dl" },
+      { "ingrediens": "Løk", "mengde": "2 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "3 fedd" },
+      { "ingrediens": "Olivenolje", "mengde": "3 ss" },
+      { "ingrediens": "Salt", "mengde": "1.5 ts" },
+      { "ingrediens": "Pepper", "mengde": "1 ts" }
+    ],
+    "instruksjoner": ["Krydre kyllingen og stek den mør.", "Kok ris med løk, hvitløk og olivenolje.", "Legg kyllingen oppå risen og la dem trekke ferdig sammen.", "Server varmt."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_013",
+    "tittel": "Taboulleh Salat",
+    "kategori": "Lunch",
+    "kjokken": "Arabisk",
+    "allergier": ["Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 210, "karbohydrater_g": 25, "proteiner_g": 5, "fett_g": 11 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Bulgur", "Tomat", "Persille", "Sitron", "Olivenolje", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Bulgur", "mengde": "1.5 dl" },
+      { "ingrediens": "Tomat", "mengde": "3 stk" },
+      { "ingrediens": "Persille", "mengde": "2 bunter" },
+      { "ingrediens": "Sitron", "mengde": "1 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "3 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Bløtlegg bulgur i varmt vann til den er mør.", "Finform hakket persille og tomater.", "Bland alt i en bolle.", "Dress med sitronsaft, olivenolje og salt."],
+    "bilde_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999"
+  },
+  {
+    "id": "recipe_014",
+    "tittel": "Kremet Humus med Olivenolje",
+    "kategori": "Snack",
+    "kjokken": "Arabisk",
+    "allergier": ["Glutenfri", "Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 290, "karbohydrater_g": 22, "proteiner_g": 9, "fett_g": 18 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Bønner", "Hvitløk", "Sitron", "Olivenolje", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Bønner", "mengde": "400 g" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Sitron", "mengde": "1 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "4 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Ha kokte kikerter/bønner i en blender.", "Tilsett hvitløk, sitronsaft, salt og olivenolje.", "Kjør til en helt glatt krem.", "Server i en dyp skål med ekstra olivenolje på toppen."],
+    "bilde_url": "https://images.unsplash.com/photo-1577805947697-89e18249d767"
+  },
+  {
+    "id": "recipe_015",
+    "tittel": "Fattoush Salat",
+    "kategori": "Lunch",
+    "kjokken": "Arabisk",
+    "allergier": ["Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 240, "karbohydrater_g": 30, "proteiner_g": 5, "fett_g": 10 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Salat", "Tomat", "Agurk", "Tortilla", "Sitron", "Olivenolje", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Salat", "mengde": "1 stk" },
+      { "ingrediens": "Tomat", "mengde": "3 stk" },
+      { "ingrediens": "Agurk", "mengde": "1 stk" },
+      { "ingrediens": "Tortilla", "mengde": "2 stk" },
+      { "ingrediens": "Sitron", "mengde": "1 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "3 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Rist tortillabrød ibiter til det er sprøtt.", "Kutt opp salat, tomater og agurk.", "Bland alt i en stor bolle.", "Tilsett sitron, olivenolje og salt før servering."],
+    "bilde_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999"
+  },
+  {
+    "id": "recipe_016",
+    "tittel": "Kylling Kabsah",
+    "kategori": "Dinner",
+    "kjokken": "Arabisk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 550, "karbohydrater_g": 60, "proteiner_g": 38, "fett_g": 16 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 45,
+    "ingredienser": ["Kylling", "Ris", "Tomat", "Løk", "Hvitløk", "Gulrot", "Olivenolje"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "700 g" },
+      { "ingrediens": "Ris", "mengde": "4 dl" },
+      { "ingrediens": "Tomat", "mengde": "3 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Gulrot", "mengde": "1 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "3 ss" }
+    ],
+    "instruksjoner": ["Stek løk og hvitløk, tilsett hakkede tomater og revet gulrot.", "Legg i kyllingen og la den koke mør i sausen.", "Ta ut kyllingen, ha i ris og kok den i kraften.", "Server risen med kyllingen på toppen."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_017",
+    "tittel": "Ful Medames",
+    "kategori": "Breakfast",
+    "kjokken": "Arabisk",
+    "allergier": ["Glutenfri", "Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 320, "karbohydrater_g": 45, "proteiner_g": 15, "fett_g": 10 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Bønner", "Hvitløk", "Sitron", "Olivenolje", "Salt", "Tomat"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Bønner", "mengde": "400 g" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Sitron", "mengde": "1 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "3 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" },
+      { "ingrediens": "Tomat", "mengde": "1 stk" }
+    ],
+    "instruksjoner": ["Varm opp kokte bønner i en kjele.", "Mos dem lett med en gaffel.", "Bland inn knust hvitløk, sitronsaft, olivenolje og salt.", "Topp med hakkede tomater."],
+    "bilde_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999"
+  },
+  {
+    "id": "recipe_018",
+    "tittel": "Oksekjøtt Kofta",
+    "kategori": "Dinner",
+    "kjokken": "Arabisk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 460, "karbohydrater_g": 10, "proteiner_g": 38, "fett_g": 28 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 30,
+    "ingredienser": ["Storfe", "Løk", "Hvitløk", "Persille", "Salt", "Pepper", "Olivenolje"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Storfe", "mengde": "600 g" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Persille", "mengde": "1 bunt" },
+      { "ingrediens": "Salt", "mengde": "1 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" }
+    ],
+    "instruksjoner": ["Bland kjøttdeig av storfe med finhakket løk, hvitløk og persille.", "Krydre med salt og pepper.", "Form til avlange spyd/pølser og stek i olivenolje.", "Server med ris eller salat."],
+    "bilde_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb"
+  },
+  {
+    "id": "recipe_019",
+    "tittel": "Manakish med Za'atar",
+    "kategori": "Breakfast",
+    "kjokken": "Arabisk",
+    "allergier": ["Laktosefri", "Vegansk"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 270, "karbohydrater_g": 40, "proteiner_g": 6, "fett_g": 10 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Mel", "Olivenolje", "Salt", "Vann"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Mel", "mengde": "4 dl" },
+      { "ingrediens": "Olivenolje", "mengde": "4 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" },
+      { "ingrediens": "Vann", "mengde": "2 dl" }
+    ],
+    "instruksjoner": ["Lag en enkel deig av mel, vann, litt olivenolje og salt.", "Kjevle ut små flate brød.", "Smør olivenolje på toppen.", "Stek i en varm panne eller ovn til gyldne."],
+    "bilde_url": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445"
+  },
+  {
+    "id": "recipe_020",
+    "tittel": "Arabisk Linsesuppe",
+    "kategori": "Dinner",
+    "kjokken": "Arabisk",
+    "allergier": ["Glutenfri", "Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 260, "karbohydrater_g": 38, "proteiner_g": 14, "fett_g": 6 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 30,
+    "ingredienser": ["Linser", "Løk", "Hvitløk", "Olivenolje", "Salt", "Pepper", "Gulrot"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Linser", "mengde": "3 dl" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Salt", "mengde": "1 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" },
+      { "ingrediens": "Gulrot", "mengde": "1 stk" }
+    ],
+    "instruksjoner": ["Fres løk, hvitløk og revet gulrot i olivenolje.", "Skyll linser og ha i kjelen sammen med vann.", "Kok i 25 minutter til alt er mørt.", "Mos suppen glatt og smak til med salt og pepper."],
+    "bilde_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
+  },
+  {
+    "id": "recipe_021",
+    "tittel": "Chicken Wok with Vegetables",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 430, "karbohydrater_g": 50, "proteiner_g": 35, "fett_g": 10 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Kylling", "Paprika", "Brokkoli", "Gulrot", "Ris"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "400 g" },
+      { "ingrediens": "Paprika", "mengde": "1 stk" },
+      { "ingrediens": "Brokkoli", "mengde": "0.5 stk" },
+      { "ingrediens": "Gulrot", "mengde": "1 stk" },
+      { "ingrediens": "Ris", "mengde": "2.5 dl" }
+    ],
+    "instruksjoner": ["Kok ris etter anvisning.", "Skjær kylling og grønnsaker i strimler.", "Stek kylling på høy varme til ferdig.", "Wok grønnsakene raskt og bland alt sammen."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_022",
+    "tittel": "Stekt Ris med Egg og Grønnsaker",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 380, "karbohydrater_g": 55, "proteiner_g": 12, "fett_g": 10 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Ris", "Egg", "Løk", "Gulrot", "Erter", "Olivenolje", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Ris", "mengde": "3 dl" },
+      { "ingrediens": "Egg", "mengde": "2 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Gulrot", "mengde": "1 stk" },
+      { "ingrediens": "Erter", "mengde": "1 dl" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Bruk gjerne kald kokt ris.", "Stek hakket løk, gulrot og erter i en panne med olje.", "Skyv grønnsakene til siden, knekk eggene i pannen og rør til eggerøre.", "Bland alt med risen og smak til med salt."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_023",
+    "tittel": "Kremet Rød Curry med Kylling",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 490, "karbohydrater_g": 40, "proteiner_g": 32, "fett_g": 22 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Kylling", "Paprika", "Squash", "Ingefær", "Hvitløk", "Ris"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "500 g" },
+      { "ingrediens": "Paprika", "mengde": "1 stk" },
+      { "ingrediens": "Squash", "mengde": "1 stk" },
+      { "ingrediens": "Ingefær", "mengde": "1 ss" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Ris", "mengde": "3 dl" }
+    ],
+    "instruksjoner": ["Stek hakket hvitløk og ingefær.", "Tilsett kuttet kylling og brun den.", "Ha i grønnsaker og la det surre.", "Server med nydelig kokt ris."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_024",
+    "tittel": "Nudelsuppe med Oksekjøtt",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 450, "karbohydrater_g": 52, "proteiner_g": 28, "fett_g": 12 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Nudler", "Storfe", "Ingefær", "Hvitløk", "Purreløk", "Salt", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Nudler", "mengde": "250 g" },
+      { "ingrediens": "Storfe", "mengde": "350 g" },
+      { "ingrediens": "Ingefær", "mengde": "1 ss" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Purreløk", "mengde": "1 stk" },
+      { "ingrediens": "Salt", "mengde": "1 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Kok nudler etter anvisning og sett til side.", "Stek tynne skiver storfe med hvitløk og ingefær.", "Kok opp vann med god kraft og tilsett grønnsaker.", "Ha nudler og kjøtt i skåler og hell varm suppe over."],
+    "bilde_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
+  },
+  {
+    "id": "recipe_025",
+    "tittel": "Ingefær- og hvitløkskylling",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 410, "karbohydrater_g": 15, "proteiner_g": 42, "fett_g": 18 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Kylling", "Ingefær", "Hvitløk", "Løk", "Olivenolje", "Ris"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "600 g" },
+      { "ingrediens": "Ingefær", "mengde": "2 ss" },
+      { "ingrediens": "Hvitløk", "mengde": "3 fedd" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Ris", "mengde": "3 dl" }
+    ],
+    "instruksjoner": ["Kutt kyllingen i terninger.", "Fres rikelig med finhakket ingefær og hvitløk i olje.", "Stek kyllingen gyllen sammen med løk.", "Server rykende varm med ris."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_026",
+    "tittel": "Asiatisk Agurksalat",
+    "kategori": "Lunch",
+    "kjokken": "Asiatisk",
+    "allergier": ["Glutenfri", "Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 110, "karbohydrater_g": 8, "proteiner_g": 2, "fett_g": 8 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 10,
+    "ingredienser": ["Agurk", "Hvitløk", "Eddik", "Sukker", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Agurk", "mengde": "2 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "1 fedd" },
+      { "ingrediens": "Eddik", "mengde": "2 ss" },
+      { "ingrediens": "Sukker", "mengde": "1 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Kutt agurk i tynne skiver eller knus dem lett.", "Bland eddik, sukker, salt og knust hvitløk.", "Hell dressingen over agurken.", "La stå i 10 minutter før servering."],
+    "bilde_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999"
+  },
+  {
+    "id": "recipe_027",
+    "tittel": "Woket Biff med Brokkoli",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Glutenfri", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 440, "karbohydrater_g": 35, "proteiner_g": 36, "fett_g": 14 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Storfe", "Brokkoli", "Hvitløk", "Ingefær", "Ris"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Storfe", "mengde": "400 g" },
+      { "ingrediens": "Brokkoli", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Ingefær", "mengde": "1 ss" },
+      { "ingrediens": "Ris", "mengde": "2.5 dl" }
+    ],
+    "instruksjoner": ["Skjær biffen i tynne strimler.", "Wok biffen raskt på sterk varme og sett til side.", "Wok brokkolibuketter med hvitløk og ingefær.", "Bland alt sammen og server med ris."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_028",
+    "tittel": "Stekte Nudler med Grønnsaker",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 360, "karbohydrater_g": 60, "proteiner_g": 9, "fett_g": 9 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Nudler", "Gulrot", "Paprika", "Løk", "Hvitløk", "Olivenolje"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Nudler", "mengde": "250 g" },
+      { "ingrediens": "Gulrot", "mengde": "1 stk" },
+      { "ingrediens": "Paprika", "mengde": "1 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" }
+    ],
+    "instruksjoner": ["Kok nudler møre.", "Kutt grønnsaker i fine strimler.", "Stek grønnsakene i olje sammen med hvitløk.", "Ha i nudlene og stek raskt sammen."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_029",
+    "tittel": "Kylling med Cashewnøtter",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 510, "karbohydrater_g": 40, "proteiner_g": 35, "fett_g": 22 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Kylling", "Cashewnøtter", "Paprika", "Løk", "Hvitløk", "Ris"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "500 g" },
+      { "ingrediens": "Cashewnøtter", "mengde": "1 dl" },
+      { "ingrediens": "Paprika", "mengde": "1 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Ris", "mengde": "3 dl" }
+    ],
+    "instruksjoner": ["Rist cashewnøttene tørt i pannen.", "Stek kyllingbiter med hvitløk og løk.", "Tilsett paprika og nøttene.", "Server varmt med ris."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_030",
+    "tittel": "Søt og Sur Kylling",
+    "kategori": "Dinner",
+    "kjokken": "Asiatisk",
+    "allergier": ["Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 480, "karbohydrater_g": 58, "proteiner_g": 30, "fett_g": 12 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Kylling", "Paprika", "Ananas", "Eddik", "Sukker", "Ris"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "500 g" },
+      { "ingrediens": "Paprika", "mengde": "2 stk" },
+      { "ingrediens": "Ananas", "mengde": "2 dl" },
+      { "ingrediens": "Eddik", "mengde": "3 ss" },
+      { "ingrediens": "Sukker", "mengde": "2 ss" },
+      { "ingrediens": "Ris", "mengde": "3 dl" }
+    ],
+    "instruksjoner": ["Kutt kylling og stek den gyllen.", "Lag saus av eddik, sukker og ananasjuice.", "Tilsett paprika og ananasbiter i pannen.", "La det koke tykt og server med ris."],
+    "bilde_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": "recipe_031",
+    "tittel": "Spaghetti Bolognese",
+    "kategori": "Dinner",
+    "kjokken": "Italiensk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 550, "karbohydrater_g": 65, "proteiner_g": 28, "fett_g": 18 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 30,
+    "ingredienser": ["Kjøttdeig", "Spaghetti", "Tomat", "Løk", "Hvitløk", "Gulrot"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kjøttdeig", "mengde": "400 g" },
+      { "ingrediens": "Spaghetti", "mengde": "350 g" },
+      { "ingrediens": "Tomat", "mengde": "4 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Gulrot", "mengde": "1 stk" }
+    ],
+    "instruksjoner": ["Brun kjøttdeig i en panne.", "Tilsett hakket løk, hvitløk og revet gulrot.", "Tilsett tomater og la det småkoke i 20 minutter.", "Kok spaghetti og server sammen."],
+    "bilde_url": "https://images.unsplash.com/photo-1621996346565-e3def6164bc3"
+  },
+  {
+    "id": "recipe_032",
+    "tittel": "Margherita Pizza",
+    "kategori": "Dinner",
+    "kjokken": "Italiensk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 600, "karbohydrater_g": 70, "proteiner_g": 22, "fett_g": 24 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 35,
+    "ingredienser": ["Mel", "Mozzarella", "Tomat", "Basilikum", "Olivenolje", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Mel", "mengde": "4 dl" },
+      { "ingrediens": "Mozzarella", "mengde": "250 g" },
+      { "ingrediens": "Tomat", "mengde": "4 stk" },
+      { "ingrediens": "Basilikum", "mengde": "1 bunt" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Lag pizzadeig av mel, vann og salt, og la heve.", "Kjevle ut deigen og dekk med tomatsaus.", "Legg på skiver av mozzarella.", "Stek i en veldig varm ovn og topp med fersk basilikum."],
+    "bilde_url": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002"
+  },
+  {
+    "id": "recipe_033",
+    "tittel": "Klassisk Pasta Carbonara",
+    "kategori": "Dinner",
+    "kjokken": "Italiensk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 580, "karbohydrater_g": 55, "proteiner_g": 24, "fett_g": 28 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Spaghetti", "Bacon", "Egg", "Parmesan", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Spaghetti", "mengde": "400 g" },
+      { "ingrediens": "Bacon", "mengde": "200 g" },
+      { "ingrediens": "Egg", "mengde": "3 stk" },
+      { "ingrediens": "Parmesan", "mengde": "1.5 dl" },
+      { "ingrediens": "Pepper", "mengde": "1 ts" }
+    ],
+    "instruksjoner": ["Kok spaghetti al dente.", "Stek bacon sprøtt i en panne.", "Visp egg og revet parmesan sammen i en bolle.", "Bland alt raskt sammen uten at eggene klumper seg."],
+    "bilde_url": "https://images.unsplash.com/photo-1612874742237-6526221588e3"
+  },
+  {
+    "id": "recipe_034",
+    "tittel": "Pasta Pesto med Basilikum",
+    "kategori": "Dinner",
+    "kjokken": "Italiensk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 490, "karbohydrater_g": 58, "proteiner_g": 12, "fett_g": 24 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Pasta", "Basilikum", "Parmesan", "Olivenolje", "Hvitløk", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Pasta", "mengde": "400 g" },
+      { "ingrediens": "Basilikum", "mengde": "2 bunter" },
+      { "ingrediens": "Parmesan", "mengde": "1 dl" },
+      { "ingrediens": "Olivenolje", "mengde": "1 dl" },
+      { "ingrediens": "Hvitløk", "mengde": "1 fedd" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Kok pasta etter anvisning.", "Blend basilikum, parmesan, hvitløk, olivenolje og salt til en glatt pesto.", "Vend pestoen inn i den varme pastaen.", "Server umiddelbart."],
+    "bilde_url": "https://images.unsplash.com/photo-1621996346565-e3def6164bc3"
+  },
+  {
+    "id": "recipe_035",
+    "tittel": "Italiensk Tomatsuppe med Mozzarella",
+    "kategori": "Lunch",
+    "kjokken": "Italiensk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 320, "karbohydrater_g": 25, "proteiner_g": 12, "fett_g": 18 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Tomat", "Løk", "Hvitløk", "Mozzarella", "Olivenolje", "Basilikum"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Tomat", "mengde": "8 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Mozzarella", "mengde": "150 g" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Basilikum", "mengde": "0.5 bunt" }
+    ],
+    "instruksjoner": ["Stek løk og hvitløk i olivenolje.", "Tilsett hakkede tomater og la det koke mørt.", "Mos suppen glatt med en stavmikser.", "Server med små terninger mozzarella og basilikum."],
+    "bilde_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
+  },
+  {
+    "id": "recipe_036",
+    "tittel": "Bruschetta med Tomat og Basilikum",
+    "kategori": "Snack",
+    "kjokken": "Italiensk",
+    "allergier": ["Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 210, "karbohydrater_g": 28, "proteiner_g": 5, "fett_g": 9 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Brød", "Tomat", "Hvitløk", "Olivenolje", "Basilikum", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Brød", "mengde": "4 skiver" },
+      { "ingrediens": "Tomat", "mengde": "3 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "1 fedd" },
+      { "ingrediens": "Olivenolje", "mengde": "3 ss" },
+      { "ingrediens": "Basilikum", "mengde": "0.5 bunt" },
+      { "ingrediens": "Salt", "mengde": "0.25 ts" }
+    ],
+    "instruksjoner": ["Rist brødskivene gylne.", "Gni dem med et hvitløksfedd.", "Bland hakkede tomater, olivenolje, basilikum og salt.", "Ha tomatblandingen på brødet rett før servering."],
+    "bilde_url": "https://images.unsplash.com/photo-1572448862539-2807e9f5c404"
+  },
+  {
+    "id": "recipe_037",
+    "tittel": "Risotto med Sopp",
+    "kategori": "Dinner",
+    "kjokken": "Italiensk",
+    "allergier": ["Glutenfri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 460, "karbohydrater_g": 62, "proteiner_g": 12, "fett_g": 16 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 35,
+    "ingredienser": ["Ris", "Sopp", "Løk", "Hvitløk", "Parmesan", "Smør"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Ris", "mengde": "3 dl" },
+      { "ingrediens": "Sopp", "mengde": "300 g" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "1 fedd" },
+      { "ingrediens": "Parmesan", "mengde": "1 dl" },
+      { "ingrediens": "Smør", "mengde": "2 ss" }
+    ],
+    "instruksjoner": ["Stek sopp og løk i smør.", "Tilsett ris og rør til den blir blank.", "Spe med varm kraft litt etter litt under omrøring til risen er mør.", "Rør inn parmesan og smør til slutt."],
+    "bilde_url": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9"
+  },
+  {
+    "id": "recipe_038",
+    "tittel": "Kremet Gnocchi med Smør",
+    "kategori": "Dinner",
+    "kjokken": "Italiensk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 410, "karbohydrater_g": 65, "proteiner_g": 8, "fett_g": 12 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Pasta", "Smør", "Parmesan", "Salat", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Pasta", "mengde": "400 g" },
+      { "ingrediens": "Smør", "mengde": "3 ss" },
+      { "ingrediens": "Parmesan", "mengde": "1 dl" },
+      { "ingrediens": "Salat", "mengde": "1 pose" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Kok gnocchi til de flyter opp.", "Stek dem lett i en panne med smeltet smør.", "Dryss over revet parmesan og server med en frisk salat."],
+    "bilde_url": "https://images.unsplash.com/photo-1621996346565-e3def6164bc3"
+  },
+  {
+    "id": "recipe_039",
+    "tittel": "Caprese Salat",
+    "kategori": "Lunch",
+    "kjokken": "Italiensk",
+    "allergier": ["Glutenfri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 280, "karbohydrater_g": 6, "proteiner_g": 14, "fett_g": 22 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 10,
+    "ingredienser": ["Tomat", "Mozzarella", "Basilikum", "Olivenolje", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Tomat", "mengde": "4 stk" },
+      { "ingrediens": "Mozzarella", "mengde": "200 g" },
+      { "ingrediens": "Basilikum", "mengde": "1 bunt" },
+      { "ingrediens": "Olivenolje", "mengde": "3 ss" },
+      { "ingrediens": "Salt", "mengde": "0.25 ts" }
+    ],
+    "instruksjoner": ["Skjær tomater og mozzarella i skiver.", "Legg dem vekselvis på et fat.", "Pynt med friske basilikumblader.", "Ringle over olivenolje og ha på litt salt."],
+    "bilde_url": "https://images.unsplash.com/photo-1592417817098-8f3d691a4bf5"
+  },
+  {
+    "id": "recipe_040",
+    "tittel": "Pasta Arrabbiata",
+    "kategori": "Dinner",
+    "kjokken": "Italiensk",
+    "allergier": ["Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 410, "karbohydrater_g": 70, "proteiner_g": 10, "fett_g": 8 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Spaghetti", "Tomat", "Hvitløk", "Chili", "Olivenolje", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Spaghetti", "mengde": "400 g" },
+      { "ingrediens": "Tomat", "mengde": "5 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "3 fedd" },
+      { "ingrediens": "Chili", "mengde": "1 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "3 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Kok spaghetti al dente.", "Stek finhakket hvitløk og chili i olivenolje.", "Tilsett hakkede tomater og la det koke til en tykk saus.", "Bland med pastaen og server."],
+    "bilde_url": "https://images.unsplash.com/photo-1621996346565-e3def6164bc3"
+  },
+  {
+    "id": "recipe_041",
+    "tittel": "Klassiske Oksetaco",
+    "kategori": "Dinner",
+    "kjokken": "Meksikansk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 520, "karbohydrater_g": 45, "proteiner_g": 30, "fett_g": 24 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Storfe", "Tortilla", "Tomat", "Salat", "Løk", "Cheddar", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Storfe", "mengde": "500 g" },
+      { "ingrediens": "Tortilla", "mengde": "8 stk" },
+      { "ingrediens": "Tomat", "mengde": "3 stk" },
+      { "ingrediens": "Salat", "mengde": "1 hode" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Cheddar", "mengde": "1.5 dl" },
+      { "ingrediens": "Pepper", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Stek kjøttdeig av storfe med tacokrydder.", "Kutt opp tomater, salat og løk.", "Varm tortillabrødene.", "Fyll med kjøtt, grønnsaker og revet cheddarost."],
+    "bilde_url": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b"
+  },
+  {
+    "id": "recipe_042",
+    "tittel": "Kylling Quesadilla",
+    "kategori": "Dinner",
+    "kjokken": "Meksikansk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 490, "karbohydrater_g": 40, "proteiner_g": 32, "fett_g": 20 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Kylling", "Tortilla", "Cheddar", "Paprika", "Løk", "Smør"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "400 g" },
+      { "ingrediens": "Tortilla", "mengde": "6 stk" },
+      { "ingrediens": "Cheddar", "mengde": "2 dl" },
+      { "ingrediens": "Paprika", "mengde": "1 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Smør", "mengde": "1 ss" }
+    ],
+    "instruksjoner": ["Stek kyllingbiter, paprika og løk i en panne.", "Legg fyll og revet cheddar mellom to tortillabrød.", "Stek i panne med litt smør til osten smelter og brødet er sprøtt."],
+    "bilde_url": "https://images.unsplash.com/photo-1618040996337-569042f8d413"
+  },
+  {
+    "id": "recipe_043",
+    "tittel": "Frisk Guacamole",
+    "kategori": "Snack",
+    "kjokken": "Meksikansk",
+    "allergier": ["Glutenfri", "Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 210, "karbohydrater_g": 9, "proteiner_g": 3, "fett_g": 18 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 10,
+    "ingredienser": ["Avokado", "Tomat", "Lime", "Hvitløk", "Salt", "Chili"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Avokado", "mengde": "3 stk" },
+      { "ingrediens": "Tomat", "mengde": "1 stk" },
+      { "ingrediens": "Lime", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "1 fedd" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" },
+      { "ingrediens": "Chili", "mengde": "0.5 stk" }
+    ],
+    "instruksjoner": ["Mos avokadoen med en gaffel.", "Bland inn finhakket tomat, chili og hvitløk.", "Press over limesaft og smak til med salt.", "Server umiddelbart."],
+    "bilde_url": "https://images.unsplash.com/photo-1541544741938-0af808871cc0"
+  },
+  {
+    "id": "recipe_044",
+    "tittel": "Meksikansk Tomatsalsa",
+    "kategori": "Snack",
+    "kjokken": "Meksikansk",
+    "allergier": ["Glutenfri", "Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 60, "karbohydrater_g": 10, "proteiner_g": 2, "fett_g": 2 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 10,
+    "ingredienser": ["Tomat", "Løk", "Hvitløk", "Lime", "Chili", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Tomat", "mengde": "5 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "1 fedd" },
+      { "ingrediens": "Lime", "mengde": "1 stk" },
+      { "ingrediens": "Chili", "mengde": "1 stk" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Finhakk tomater, løk, hvitløk og chili.", "Bland alt i en skål.", "Tilsett limesaft og salt.", "La stå i 10 minutter for at smakene skal sette seg."],
+    "bilde_url": "https://images.unsplash.com/photo-1541544741938-0af808871cc0"
+  },
+  {
+    "id": "recipe_045",
+    "tittel": "Kylling Fajitas",
+    "kategori": "Dinner",
+    "kjokken": "Meksikansk",
+    "allergier": ["Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 460, "karbohydrater_g": 42, "proteiner_g": 35, "fett_g": 15 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 25,
+    "ingredienser": ["Kylling", "Paprika", "Løk", "Tortilla", "Olivenolje", "Lime"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "600 g" },
+      { "ingrediens": "Paprika", "mengde": "2 stk" },
+      { "ingrediens": "Løk", "mengde": "2 stk" },
+      { "ingrediens": "Tortilla", "mengde": "8 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Lime", "mengde": "1 stk" }
+    ],
+    "instruksjoner": ["Skjær kylling, paprika og løk i strimler.", "Stek i en varm panne med olivenolje til alt er mørt og gyldent.", "Press over limesaft.", "Server i varme tortillabrød."],
+    "bilde_url": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b"
+  },
+  {
+    "id": "recipe_046",
+    "tittel": "Bønne- og Risburrito",
+    "kategori": "Dinner",
+    "kjokken": "Meksikansk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 440, "karbohydrater_g": 70, "proteiner_g": 14, "fett_g": 10 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 20,
+    "ingredienser": ["Bønner", "Ris", "Tortilla", "Løk", "Tomat", "Cheddar"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Bønner", "mengde": "400 g" },
+      { "ingrediens": "Ris", "mengde": "3 dl" },
+      { "ingrediens": "Tortilla", "mengde": "4 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Tomat", "mengde": "2 stk" },
+      { "ingrediens": "Cheddar", "mengde": "1 dl" }
+    ],
+    "instruksjoner": ["Kok ris og varm opp bønner med stekt løk.", "Legg ris, bønner, hakkede tomater og ost på tortillabrødene.", "Rull stramt sammen til en burrito.", "Stek lett i pannen for sprø overflate."],
+    "bilde_url": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46"
+  },
+  {
+    "id": "recipe_047",
+    "tittel": "Meksikansk Bønnestuing (Frijoles)",
+    "kategori": "Side dish",
+    "kjokken": "Meksikansk",
+    "allergier": ["Glutenfri", "Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 230, "karbohydrater_g": 35, "proteiner_g": 12, "fett_g": 5 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Bønner", "Løk", "Hvitløk", "Olivenolje", "Salt", "Pepper"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Bønner", "mengde": "500 g" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "2 fedd" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" },
+      { "ingrediens": "Pepper", "mengde": "0.25 ts" }
+    ],
+    "instruksjoner": ["Stek hakket løk og hvitløk i olivenolje.", "Tilsett bønner og litt vann, og la det småkoke.", "Mos bønnene grovt med en stapper.", "Smak til med salt og pepper."],
+    "bilde_url": "https://images.unsplash.com/photo-1541544741938-0af808871cc0"
+  },
+  {
+    "id": "recipe_048",
+    "tittel": "Kylling Enchiladas",
+    "kategori": "Dinner",
+    "kjokken": "Meksikansk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 530, "karbohydrater_g": 48, "proteiner_g": 36, "fett_g": 21 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 35,
+    "ingredienser": ["Kylling", "Tortilla", "Tomat", "Cheddar", "Løk", "Hvitløk", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Kylling", "mengde": "500 g" },
+      { "ingrediens": "Tortilla", "mengde": "6 stk" },
+      { "ingrediens": "Tomat", "mengde": "4 stk" },
+      { "ingrediens": "Cheddar", "mengde": "2 dl" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "1 fedd" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Lag tomatsaus med løk, hvitløk og hakkede tomater.", "Fyll tortillabrødene med stekt kylling og litt saus, og rull sammen i en form.", "Hell resten av sausen over og dryss med cheddar.", "Stek i ovnen ved 200 grader til osten er smeltet."],
+    "bilde_url": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b"
+  },
+  {
+    "id": "recipe_049",
+    "tittel": "Meksikansk Avokadosalat",
+    "kategori": "Lunch",
+    "kjokken": "Meksikansk",
+    "allergier": ["Glutenfri", "Vegansk", "Laktosefri"],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 260, "karbohydrater_g": 12, "proteiner_g": 4, "fett_g": 22 },
+    "porsjoner": 4,
+    "tilberedningstid_min": 10,
+    "ingredienser": ["Avokado", "Tomat", "Lime", "Løk", "Olivenolje", "Salt"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Avokado", "mengde": "3 stk" },
+      { "ingrediens": "Tomat", "mengde": "3 stk" },
+      { "ingrediens": "Lime", "mengde": "1 stk" },
+      { "ingrediens": "Løk", "mengde": "0.5 stk" },
+      { "ingrediens": "Olivenolje", "mengde": "2 ss" },
+      { "ingrediens": "Salt", "mengde": "0.5 ts" }
+    ],
+    "instruksjoner": ["Kutt avokado og tomater i terninger.", "Finhakk løken.", "Bland alt forsiktig i en bolle.", "Dress med limesaft, olivenolje og salt."],
+    "bilde_url": "https://images.unsplash.com/photo-1541544741938-0af808871cc0"
+  },
+  {
+    "id": "recipe_050",
+    "tittel": "Huevos Rancheros",
+    "kategori": "Breakfast",
+    "kjokken": "Meksikansk",
+    "allergier": [],
+    "naeringsinnhold_per_porsjon": { "kalorier_kcal": 380, "karbohydrater_g": 30, "proteiner_g": 18, "fett_g": 20 },
+    "porsjoner": 3,
+    "tilberedningstid_min": 15,
+    "ingredienser": ["Egg", "Tortilla", "Tomat", "Løk", "Hvitløk", "Cheddar"],
+    "ingredienser_med_mengde": [
+      { "ingrediens": "Egg", "mengde": "3 stk" },
+      { "ingrediens": "Tortilla", "mengde": "3 stk" },
+      { "ingrediens": "Tomat", "mengde": "3 stk" },
+      { "ingrediens": "Løk", "mengde": "1 stk" },
+      { "ingrediens": "Hvitløk", "mengde": "1 fedd" },
+      { "ingrediens": "Cheddar", "mengde": "1 dl" }
+    ],
+    "instruksjoner": ["Lag en rask tomatsaus med løk, hvitløk og tomater i en panne.", "Stek eller kok eggene.", "Legg lett stekte tortillabrød på tallerkener, ha saus og et speilegg på toppen.", "Dryss over revet cheddar."],
+    "bilde_url": "https://images.unsplash.com/photo-1590412200988-a46697078ad5"
+  }
 ]

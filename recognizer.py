@@ -1,4 +1,3 @@
-# ===== FIL: recognizer.py =====
 import io
 import json
 from functools import lru_cache
@@ -14,9 +13,9 @@ import rules
 import memory as memory_module
 from produce_config import PRODUCE, UNKNOWN_LABEL
 
-W_CLIP = 0.65
-W_RULES = 0.35
-MAX_SIDE = 1024
+W_CLIP = 0.65    # Vekt for CLIP
+W_RULES = 0.35   # Vekt for farge- og formreglene
+MAX_SIDE = 1024  # Bildet krympes til maks 1024 piksler
 
 # Farger for tegning (RGB)
 COLOR_ACCEPTED = (0, 120, 255)   # blå: godkjent råvare
@@ -26,6 +25,7 @@ SPLIT_COLORS = [(0, 120, 255), (255, 140, 0), (0, 200, 120)]  # blå, oransje, g
 
 @lru_cache(maxsize=1)
 def _rembg_session():
+    """Lager rembg-økten en gang."""
     try:
         from rembg import new_session
         return new_session("u2net")
@@ -34,10 +34,7 @@ def _rembg_session():
 
 
 def segment(image):
-    """
-    Sjekker om bildet har en ekte alfa-kanal. Hvis ikke (eller hvis alfa er 255 overalt),
-    kjøres rembg.remove() automatisk slik at bakgrunnen fjernes.
-    """
+    """Lager en maske av objektene: bruker alfakanalen, ellers rembg."""
     try:
         if image.mode == "RGBA":
             alpha = np.array(image)[..., 3]
@@ -48,6 +45,7 @@ def segment(image):
     except Exception:
         pass
 
+    # Ingen alfakanal: fjern bakgrunnen med rembg
     try:
         from rembg import remove
         session = _rembg_session()
@@ -64,10 +62,12 @@ def segment(image):
     except Exception:
         pass
 
+    # Reserve: hele bildet regnes som objekt
     return np.ones((image.height, image.width), dtype=bool), False
 
 
 def split_objects(mask, multi=True, min_fraction=0.002, max_objects=20):
+    """Deler masken i separate objekter med connected components."""
     height, width = mask.shape
 
     def whole():
@@ -81,6 +81,7 @@ def split_objects(mask, multi=True, min_fraction=0.002, max_objects=20):
         return whole()
 
     m8 = mask.astype(np.uint8) * 255
+    # Fjern små støyprikker, og gi hver flekk sitt eget nummer
     m8 = cv2.morphologyEx(m8, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
     count, labels, stats, _ = cv2.connectedComponentsWithStats(m8, connectivity=8)
 
@@ -88,6 +89,7 @@ def split_objects(mask, multi=True, min_fraction=0.002, max_objects=20):
     for i in range(1, count):
         comp_mask = (labels == i)
         area = int(np.sum(comp_mask))
+        # Behold bare objekter større enn 0,2 % av bildet
         if area >= min_fraction * height * width:
             ys, xs = np.where(comp_mask)
             if len(xs) > 0 and len(ys) > 0:
@@ -100,24 +102,19 @@ def split_objects(mask, multi=True, min_fraction=0.002, max_objects=20):
     if not objects:
         return whole()
 
+    # Største objekter først
     objects.sort(key=lambda o: o[2], reverse=True)
     return [(bbox, m) for bbox, m, _ in objects[:max_objects]]
 
 
+# Oppdeling av utklipp med flere produkter
 
 COLOR_SPLIT_SPATIAL = 40.0   # hvor mye posisjon teller i forhold til farge
 COLOR_SPLIT_LIGHTNESS = 0.3  # lysstyrke teller lite, slik at skygger ikke lager egne grupper
 
 
 def color_split(crop_rgb, mask, n_parts):
-    """
-    Automatisk oppdeling etter farge (passer når produktene har ulik farge,
-    f.eks. paprika og persille).
-
-    1. Hver piksel beskrives med farge i LAB (A og B teller mest, L lite) og posisjon (x, y).
-    2. K-means (cv2.kmeans) deler pikslene i n_parts grupper.
-    3. Hver gruppe ryddes med morfologisk åpning og lukking, og små biter fjernes.
-    """
+    """Deler utklippet i n_parts deler etter farge og posisjon med k-means."""
     mask = mask.astype(bool)
     total = int(mask.sum())
     if n_parts <= 1 or total < 100:
@@ -128,6 +125,7 @@ def color_split(crop_rgb, mask, n_parts):
     ys, xs = np.where(mask)
     scale = COLOR_SPLIT_SPATIAL / max(h, w)
 
+    # Hver piksel: lysstyrke, to fargetall (LAB) og posisjon
     feats = np.column_stack([
         COLOR_SPLIT_LIGHTNESS * lab[ys, xs, 0],  # lysstyrke
         lab[ys, xs, 1],                          # grønn <-> rød
@@ -141,6 +139,7 @@ def color_split(crop_rgb, mask, n_parts):
         idx = np.random.default_rng(0).choice(len(feats), 20000, replace=False)
         sample = feats[idx]
 
+    # Finn midtpunktene, og gi hver piksel til nærmeste
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 50, 0.5)
     _, _, centers = cv2.kmeans(sample, n_parts, None, criteria, 5, cv2.KMEANS_PP_CENTERS)
 
@@ -150,6 +149,7 @@ def color_split(crop_rgb, mask, n_parts):
     k = max(3, int(round(min(h, w) * 0.03)) | 1)  # oddetall
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
 
+    # Rydd hver del og fjern små biter
     parts = []
     for c in range(n_parts):
         part = np.zeros((h, w), np.uint8)
@@ -171,12 +171,7 @@ def color_split(crop_rgb, mask, n_parts):
 
 
 def line_split(mask, angle_deg, position):
-    """
-    Manuell oppdeling med en rett skillelinje (passer når produktene har lik farge).
-
-    angle_deg: 0 = loddrett linje (venstre/høyre), 90 = vannrett linje (topp/bunn).
-    position:  0-1, hvor langs objektet linjen ligger.
-    """
+    """Deler masken i to med en rett linje (0° = loddrett, posisjon 0–1)."""
     mask = mask.astype(bool)
     total = int(mask.sum())
     if total < 50:
@@ -196,13 +191,14 @@ def line_split(mask, angle_deg, position):
 
 
 def parts_from_recipe(crop_rgb, mask, recipe):
-    """Lager delene fra en lagret oppdeling, f.eks. {'method': 'line', 'angle': 0, 'position': 0.5}."""
+    """Gjenskaper en lagret oppdeling."""
     if recipe.get("method") == "color":
         return color_split(crop_rgb, mask, int(recipe.get("n_parts", 2)))
     return line_split(mask, float(recipe.get("angle", 0)), float(recipe.get("position", 0.5)))
 
 
 def _crop_rgb(result, det):
+    """Klipper ut objektets boks fra bildet."""
     rgb = np.array(result["image"].convert("RGB"))
     x, y, w, h = det["bbox"]
     return rgb[y:y + h, x:x + w]
@@ -233,18 +229,20 @@ def split_preview(result, det, parts, min_side=260):
     return image
 
 
-# ---------- Gjenkjenning av ett objekt ----------
+# Gjenkjenning av ett objekt
 
 def _analyze_crop(crop_rgb, crop_mask, bbox, clip_used, min_conf=0.30,
                   use_memory=True, memory=None, memory_threshold=None):
-    """Gjenkjenner ett objekt. crop_mask er masken innenfor bbox. Returnerer en deteksjon eller None."""
+    """Gjenkjenner ett utklipp og gir en deteksjon (eller None)."""
     if crop_rgb.size == 0 or not crop_mask.any():
         return None
 
+    # Regler: farge og form
     histogram = features.color_histogram(crop_rgb, crop_mask)
     aspect = features.aspect_ratio(crop_mask)
     rule_probs = rules.normalized(histogram, aspect)
 
+    # Grå bakgrunn, så CLIP bare ser objektet
     clean = np.where(crop_mask[..., None], crop_rgb, 200).astype(np.uint8)
     crop_image = Image.fromarray(clean)
 
@@ -254,6 +252,7 @@ def _analyze_crop(crop_rgb, crop_mask, bbox, clip_used, min_conf=0.30,
             clip_scores = clip_classifier.classify(crop_image)
             unknown = clip_scores.pop(UNKNOWN_LABEL, 0.0)
             total = sum(clip_scores.values()) or 1.0
+            # Bland CLIP og reglene
             final = {
                 name: W_CLIP * (clip_scores.get(name, 0.0) / total) + W_RULES * rule_probs[name]
                 for name in PRODUCE
@@ -265,8 +264,10 @@ def _analyze_crop(crop_rgb, crop_mask, bbox, clip_used, min_conf=0.30,
 
     ranking = sorted(final.items(), key=lambda kv: kv[1], reverse=True)
     best, confidence = ranking[0]
+    # Godkjent hvis sikker nok og ikke ligner «ukjent»
     accepted = confidence >= min_conf and unknown < 0.55
 
+    # Minnet overstyrer hvis brukeren har rettet et lignende utklipp
     from_memory = False
     memory_similarity = 0.0
     if clip_used and use_memory:
@@ -302,7 +303,7 @@ def _analyze_crop(crop_rgb, crop_mask, bbox, clip_used, min_conf=0.30,
 
 def _detections_from_parts(crop_rgb, parts, bbox, clip_used, min_conf=0.30,
                            use_memory=True, memory=None, memory_threshold=None):
-    """Gjør hver del (maske innenfor bbox) om til en egen deteksjon og gjenkjenner den på nytt."""
+    """Gjenkjenner hver del som en egen deteksjon."""
     if len(parts) < 2:
         return []
 
@@ -327,10 +328,7 @@ def _detections_from_parts(crop_rgb, parts, bbox, clip_used, min_conf=0.30,
 
 
 def _auto_split(crop_rgb, crop_mask, bbox, det, clip_used, min_conf, memory_threshold):
-    """
-    Sjekker om brukeren har delt opp et lignende utklipp før.
-    I så fall deles dette utklippet på samme måte, og delene gjenkjennes (med minnet).
-    """
+    """Deler utklippet automatisk hvis et lignende er delt opp før."""
     try:
         store = memory_module.default_split_memory()
         if len(store) == 0:
@@ -352,7 +350,7 @@ def _auto_split(crop_rgb, crop_mask, bbox, det, clip_used, min_conf, memory_thre
 
 def recognize(image, multi=True, use_clip=True, min_conf=0.30, exclude_mask=None,
               use_memory=True, memory=None, memory_threshold=None):
-   
+    """Finner og gjenkjenner alle råvarer i bildet."""
     orig_image = ImageOps.exif_transpose(image)
     mask, segmentation_used = segment(orig_image)
 
@@ -361,6 +359,7 @@ def recognize(image, multi=True, use_clip=True, min_conf=0.30, exclude_mask=None
     rgb = np.array(image)
     img_h, img_w = rgb.shape[:2]
 
+    # Masken må ha samme størrelse som det krympede bildet
     if mask.shape != (img_h, img_w):
         mask_np = (mask.astype(np.uint8)) * 255
         mask_resized = cv2.resize(mask_np, (img_w, img_h), interpolation=cv2.INTER_NEAREST)
@@ -379,17 +378,18 @@ def recognize(image, multi=True, use_clip=True, min_conf=0.30, exclude_mask=None
     objects = split_objects(mask, multi=multi)
 
     clip_used = bool(use_clip and clip_classifier.clip_available())
-    # Automatisk oppdeling brukes bare med appens eget minne 
+    # Automatisk oppdeling brukes bare med appens eget minne
     use_auto_split = clip_used and use_memory and memory is None and multi
     detections = []
 
     for (x, y, w, h), obj_mask in objects:
+        # Hold boksen innenfor bildet
         x = max(0, min(x, img_w - 1))
         y = max(0, min(y, img_h - 1))
         w = max(1, min(w, img_w - x))
         h = max(1, min(h, img_h - y))
 
-        # Hopp over objektet hvis det overlapper med OCR-tekstmasken
+        # Hopp over objekter som overlapper tekst (emballasje)
         if ex_resized is not None:
             crop_ex = ex_resized[y:y + h, x:x + w]
             crop_obj_mask = obj_mask[y:y + h, x:x + w]
@@ -404,7 +404,7 @@ def recognize(image, multi=True, use_clip=True, min_conf=0.30, exclude_mask=None
         if det is None:
             continue
 
-        # dersom brukeren  har delt opp et lignende utklipp før, vil da dele  på samme måte.
+        # Del opp automatisk hvis et lignende utklipp er delt før
         if use_auto_split:
             parts = _auto_split(crop_rgb, crop_mask, (x, y, w, h), det, clip_used, min_conf, memory_threshold)
             if parts:
@@ -423,10 +423,7 @@ def recognize(image, multi=True, use_clip=True, min_conf=0.30, exclude_mask=None
 
 
 def split_detection(result, det, parts):
-    """
-    Lager nye deteksjoner av delene (masker fra make_split_parts) og gjenkjenner hver del
-    på nytt. Returnerer en liste med nye deteksjoner (tom liste hvis det ikke lyktes).
-    """
+    """Gjenkjenner delene etter en manuell oppdeling."""
     settings = result.get("settings", {})
     return _detections_from_parts(
         _crop_rgb(result, det), parts, det["bbox"], result.get("clip_used", False),
@@ -436,10 +433,12 @@ def split_detection(result, det, parts):
 
 
 def unique_labels(result):
+    """Navnene på godkjente råvarer, uten duplikater."""
     labels = [d["label"] for d in result["detections"] if d["label"]]
     return list(dict.fromkeys(labels))
 
 
+# Tegning
 
 def _font_candidates():
     """Skrifter som har æ, ø og å. Den første som finnes blir brukt."""
@@ -462,7 +461,7 @@ def _font_candidates():
 
 @lru_cache(maxsize=16)
 def label_font(size=20):
-    """Skrift som støtter æ, ø og å (cv2.putText og standardskriften i Pillow gjør ikke det)."""
+    """Finner en skrift med æ, ø og å (OpenCV mangler dem)."""
     for candidate in _font_candidates():
         try:
             return ImageFont.truetype(candidate, size)
@@ -475,7 +474,7 @@ def label_font(size=20):
 
 
 def draw_label(draw, text, position, color, size=20):
-    """Tegner en merkelapp med hvit bakgrunn ."""
+    """Tegner en merkelapp med hvit bakgrunn (enkel versjon, uten flytting)."""
     font = label_font(size)
     x, y = position
     left, top, right, bottom = draw.textbbox((x, y), text, font=font)
@@ -484,15 +483,12 @@ def draw_label(draw, text, position, color, size=20):
 
 
 def _overlaps(a, b):
+    """Sann hvis to bokser overlapper."""
     return not (a[2] < b[0] or a[0] > b[2] or a[3] < b[1] or a[1] > b[3])
 
 
 def draw_labels(image, labels, size=20):
-    """
-    Tegner merkelapper med hvit bakgrunn på bildet.
-    labels er en liste med (tekst, (x, y), farge).
-    Merkelapper som ville ligget oppå hverandre flyttes opp eller ned.
-    """
+    """Tegner merkelapper (tekst, (x, y), farge) og flytter dem som overlapper."""
     draw = ImageDraw.Draw(image)
     font = label_font(size)
     img_w, img_h = image.size
@@ -550,10 +546,7 @@ def label_text(det):
 
 
 def annotate(result):
-    """
-    Tegner konturlinje og navn rundt hvert objekt i result["image"].
-    Godkjente råvarer tegnes i blått.
-    """
+    """Tegner konturer og navn: blått for godkjent, grått for ukjent."""
     canvas = np.array(result["image"].convert("RGB"))
     labels = []
 

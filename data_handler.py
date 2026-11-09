@@ -1,46 +1,59 @@
 import json
 import re
-from difflib import SequenceMatcher
 from pathlib import Path
 import streamlit as st
 
-# Setter opp stier til mapper og filer for data
 BASE_DIR = Path(__file__).resolve().parent
 INGREDIENTS_FILE = BASE_DIR / "ingredients.json"
 RECIPES_FILE = BASE_DIR / "recipes.json"
 
+# Synonymer og engelske navn per ingrediens (nøkler med små bokstaver og æøå)
+SYNONYM_MAP = {
+    "melk": ["melk", "lettmelk", "helmelk", "skummetmelk"],
+    "mel": ["mel", "hvetemel", "siktet hvetemel"],
+    "løk": ["løk", "gulløk", "onion"],
+    "hvitløk": ["hvitløk", "garlic"],
+    "eple": ["eple", "epler"],
+    "tomat": ["tomat", "tomater", "tomato"],
+    "gulrot": ["gulrot", "gulrotter", "carrot"],
+    "potet": ["potet", "poteter"],
+}
+
+# Leser JSON; modified_time fornyer cachen når filen endres
 @st.cache_data
 def read_json(path, modified_time):
-    """Hjelpefunksjon for å lese JSON-filer effektivt med Streamlit-caching."""
     with open(path, "r", encoding="utf-8") as file:
         return json.load(file)
 
+# Små bokstaver, uten spesialtegn og doble mellomrom
 def normalize_text(text):
-    """Gjør tekst enklere å sammenligne ved å fjerne store bokstaver, spesialtegn og mellomrom."""
     text = str(text or "").casefold().strip()
     text = text.replace("-", " ")
-    text = re.sub(r"[^\w\sæøå]", " ", text)
+    text = re.sub(r"[^\w\s]", " ", text)  # \w dekker også æ, ø og å
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
-def ingredients_match(ing_a, ing_b):
-    """Sjekker om to ingredienser matcher, med unntak for misvisende ord som mel og melk."""
-    a = normalize_text(ing_a)
-    b = normalize_text(ing_b)
-    if not a or not b:
-        return False
-    if a == b:
-        return True
-    if a in b or b in a:
-        if a == "mel" and ("melk" in b or "melk" in a):
-            return False
-        if b == "mel" and ("melk" in a or "melk" in b):
-            return False
-        return True
-    return False
+# Sann hvis teksten matcher ingrediensen (eksakt, synonym eller helt ord)
+def ingredients_match(detected_text, ingredient_name):
+    det_norm = normalize_text(detected_text)
+    ing_norm = normalize_text(ingredient_name)
 
+    if not det_norm or not ing_norm:
+        return False
+
+    if det_norm == ing_norm:
+        return True
+
+    synonyms = SYNONYM_MAP.get(ing_norm, [])
+    for syn in synonyms:
+        if re.search(r"\b" + re.escape(syn) + r"\b", det_norm):
+            return True
+
+    pattern = r"\b" + re.escape(ing_norm) + r"\b"
+    return bool(re.search(pattern, det_norm))
+
+# Leser ingredienslisten og fjerner duplikater
 def load_ingredients():
-    """Laster inn og renser ingredienslisten fra ingredients.json[cite: 1, 2]."""
     if not INGREDIENTS_FILE.exists():
         st.error(f"Fant ikke filen: {INGREDIENTS_FILE.name}")
         return []
@@ -55,7 +68,7 @@ def load_ingredients():
         data = data.get("ingredients", data.get("ingredienser", []))
 
     if not isinstance(data, list):
-        st.error("ingredients.json må inneholde en liste.")
+        st.error("ingredients.json ma inneholde en liste.")
         return []
 
     ingredients = []
@@ -85,8 +98,8 @@ def load_ingredients():
 
     return ingredients
 
+# Leser oppskriftene og gir feltene like navn
 def load_recipes():
-    """Laster inn og strukturerer oppskrifter fra recipes.json[cite: 1, 3]."""
     if not RECIPES_FILE.exists():
         st.warning(f"Fant ikke filen: {RECIPES_FILE.name}")
         return []
@@ -101,7 +114,7 @@ def load_recipes():
         data = data.get("recipes", data.get("oppskrifter", []))
 
     if not isinstance(data, list):
-        st.error("recipes.json må inneholde en liste.")
+        st.error("recipes.json ma inneholde en liste.")
         return []
 
     recipes = []
@@ -128,16 +141,21 @@ def load_recipes():
         if isinstance(ingredients_with_amount, str):
             ingredients_with_amount = [ingredients_with_amount]
 
-        instructions = item.get("instruksjoner") or item.get("instructions") or item.get("fremgangsmåte") or []
+        instructions = item.get("instruksjoner") or item.get("instructions") or item.get("fremgangsmate") or []
         if isinstance(instructions, str):
             instructions = [instructions]
+
+        nutrition = item.get("naeringsinnhold_per_porsjon") or item.get("nutrition") or {}
 
         recipes.append({
             "id": item.get("id", ""),
             "title": str(title),
             "category": item.get("kategori") or item.get("category") or "Annet",
+            "cuisine": item.get("kjokken") or item.get("cuisine") or "Internasjonal",
+            "allergies": item.get("allergier") or item.get("allergies") or [],
+            "nutrition": nutrition,
             "time": item.get("tilberedningstid_min") or item.get("tilberedningstid_minutter") or item.get("preparation_time") or item.get("time"),
-            "portions": item.get("porsjoner") or item.get("portions"),
+            "portions": item.get("porsjoner") or item.get("portions") or 1,
             "ingredients": ingredient_names,
             "ingredients_with_amount": ingredients_with_amount,
             "instructions": instructions,
@@ -146,42 +164,59 @@ def load_recipes():
 
     return recipes
 
-def find_matching_recipes(recipes, selected_ingredients):
-    """Sammenligner brukerens valgte ingredienser med oppskrifter og beregner matchprosent."""
+# Ganger alle tall i mengden med porsjonsfaktoren
+def scale_amount_string(mengde_str, factor):
+    if factor == 1.0 or not mengde_str:
+        return mengde_str
+
+    def replace_num(match):
+        val = float(match.group(0))
+        new_val = val * factor
+        if new_val.is_integer():
+            return str(int(new_val))
+        return f"{new_val:.1f}".rstrip("0").rstrip(".")
+
+    return re.sub(r"\b\d+(?:\.\d+)?\b", replace_num, str(mengde_str))
+
+# Finner passende oppskrifter, sortert etter flest treff
+def find_matching_recipes(recipes, selected_ingredients, selected_cuisine="Alle", selected_allergies=None):
+    if selected_allergies is None:
+        selected_allergies = []
+
     matches = []
 
     for recipe in recipes:
+        if selected_cuisine != "Alle" and recipe["cuisine"] != selected_cuisine:
+            continue
+
+        # Oppskriften må ha alle valgte kostholdsmerker
+        if selected_allergies:
+            if any(allergy not in recipe["allergies"] for allergy in selected_allergies):
+                continue
+
         recipe_ingredients = recipe["ingredients"]
         matched = []
         missing = []
 
         for recipe_ing in recipe_ingredients:
-            is_matched = False
-            for sel_ing in selected_ingredients:
-                if ingredients_match(recipe_ing, sel_ing):
-                    is_matched = True
-                    break
-            if is_matched:
+            if any(ingredients_match(recipe_ing, sel_ing) for sel_ing in selected_ingredients):
                 matched.append(recipe_ing)
             else:
                 missing.append(recipe_ing)
 
         if matched:
-            percentage = (
-                len(set(normalize_text(m) for m in matched)) / len(set(normalize_text(ri) for ri in recipe_ingredients)) * 100
-                if recipe_ingredients
-                else 0
-            )
+            unique_total = len(set(normalize_text(ri) for ri in recipe_ingredients))
+            unique_matched = len(set(normalize_text(m) for m in matched))
+            percentage = unique_matched / unique_total * 100 if unique_total else 0
 
             matches.append({
                 "recipe": recipe,
                 "matched": list(dict.fromkeys(matched)),
                 "missing": list(dict.fromkeys(missing)),
                 "percentage": percentage,
-                "count": len(set(normalize_text(m) for m in matched)),
+                "count": unique_matched,
             })
 
-    # Sorterer oppskriftene etter flest treff og høyest matchprosent
     matches.sort(
         key=lambda result: (result["count"], result["percentage"]),
         reverse=True,

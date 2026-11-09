@@ -1,62 +1,54 @@
 import numpy as np
 import cv2
 
+# Fargeboksene histogrammet bruker (samme navn som i produce_config.py)
+COLOR_NAMES = ["red", "orange", "yellow", "green", "blue", "purple", "brown", "white", "dark"]
+
 
 def color_histogram(rgb_img, mask):
-    """
-    Beregner fargefordelingen for pikslene i masken.
-    """
+    """Andel piksler i hver fargeboks (HSV); summen blir 1."""
     hsv = cv2.cvtColor(rgb_img, cv2.COLOR_RGB2HSV)
-    h, s, v = cv2.split(hsv)
+    # int16 for trygge sammenligninger
+    h, s, v = [channel.astype(np.int16) for channel in cv2.split(hsv)]
 
-    valid_pixels = mask & (s > 10)  # Fjern helt grå/hvite bakgrunnsrester
-    total_valid = np.sum(valid_pixels)
-
-    bins = {
-        "red": 0, "orange": 0, "yellow": 0, "green": 0,
-        "blue": 0, "purple": 0, "brown": 0, "white": 0, "dark": 0
-    }
+    valid_pixels = mask & (s > 10)  # Hopp over grå piksler
+    total_valid = int(np.sum(valid_pixels))
 
     if total_valid == 0:
-        return bins
+        return {name: 0 for name in COLOR_NAMES}
 
-    h_v = h[valid_pixels]
-    s_v = s[valid_pixels]
-    v_v = v[valid_pixels]
+    h = h[valid_pixels]
+    s = s[valid_pixels]
+    v = v[valid_pixels]
 
-    for hi, si, vi in zip(h_v, s_v, v_v):
-        if vi < 50:
-            # 1. Mørke piksler 
-            bins["dark"] += 1
-        elif vi > 220 and si < 30:
-            # 2. Nesten hvite piksler 
-            bins["white"] += 1
-        elif 10 <= hi < 25 and si > 100 and vi < 120:
-            # 3. Brun = oransje/gul fargetone, men mørk
-            bins["brown"] += 1
-        else:
-            # 4. Fargetone 
-            if hi < 10 or hi > 170:
-                bins["red"] += 1
-            elif hi < 22:
-                bins["orange"] += 1
-            elif hi < 35:
-                bins["yellow"] += 1
-            elif hi < 85:
-                bins["green"] += 1
-            elif hi < 130:
-                bins["blue"] += 1
-            elif hi < 160:
-                bins["purple"] += 1
-            else:
-                bins["red"] += 1  # 160-170 regnes som rødlig
+    # Rekkefølgen er viktig: mørk, hvit og brun sjekkes før fargetonen
+    # 1. Mørke piksler (f.eks. aubergine, avokado)
+    dark = v < 50
+    # 2. Nesten hvite piksler (f.eks. blomkål, hvitløk)
+    white = ~dark & (v > 220) & (s < 30)
+    # 3. Brun: oransje fargetone, men mørk (f.eks. potet, kiwi)
+    brown = ~dark & ~white & (h >= 10) & (h < 25) & (s > 100) & (v < 120)
+    # 4. Resten sorteres etter fargetone (H går fra 0 til 180)
+    rest = ~(dark | white | brown)
+
+    groups = {
+        "dark": dark,
+        "white": white,
+        "brown": brown,
+        "red": rest & ((h < 10) | (h >= 160)),  # 160-180 regnes også som rødlig
+        "orange": rest & (h >= 10) & (h < 22),
+        "yellow": rest & (h >= 22) & (h < 35),
+        "green": rest & (h >= 35) & (h < 85),
+        "blue": rest & (h >= 85) & (h < 130),
+        "purple": rest & (h >= 130) & (h < 160),
+    }
 
     # Normaliser slik at summen blir 1.0
-    return {k: count / total_valid for k, count in bins.items()}
+    return {name: float(np.sum(groups[name])) / total_valid for name in COLOR_NAMES}
 
 
 def aspect_ratio(mask):
-    """Hvor avlangt objektet er: lengste side / korteste side av boksen rundt masken."""
+    """Lengste side delt på korteste (1 = rundt, høyt tall = avlangt)."""
     ys, xs = np.where(mask)
     if len(xs) == 0 or len(ys) == 0:
         return 1.0
