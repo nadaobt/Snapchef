@@ -13,8 +13,8 @@ import rules
 import memory as memory_module
 from produce_config import PRODUCE, UNKNOWN_LABEL
 
-W_CLIP = 0.65    # Vekt for CLIP
-W_RULES = 0.35   # Vekt for farge- og formreglene
+W_CLIP = 0.50   # Vekt for CLIP
+W_RULES = 0.50   # Vekt for farge- og formreglene
 MAX_SIDE = 1024  # Bildet krympes til maks 1024 piksler
 
 # Farger for tegning (RGB)
